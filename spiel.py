@@ -74,5 +74,3 @@ def play_game():
         input("Drücke Enter, um das Programm zu beenden.")
 
 play_game()
-
-play_game()
