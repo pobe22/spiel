@@ -1,7 +1,6 @@
 import random
 from questions import questionsDTSM, questionsINF
 
-# Kombinieren der Fragekataloge in einem Dictionary
 questions = {"DTSM": questionsDTSM, "INF": questionsINF}
 
 def choose_question_set():
@@ -47,13 +46,33 @@ def ask_question(question, options):
 def play_game():
     print("Willkommen beim Quiz!")
     question_set = choose_question_set()
+    questions = list(question_set.items())
+    random.shuffle(questions)
     correct_answers = 0
-    question_count = choose_question_count()
-    for _ in range(question_count):
-        question, options = random.choice(list(question_set.items()))
+    question_count = min(choose_question_count(), len(questions))
+    asked_questions = []
+    for i in range(question_count):
+        question, options = questions[i]
         if ask_question(question, options):
             correct_answers += 1
+        else:
+            asked_questions.append((question, options))
     print("Du hast {} von {} Fragen richtig beantwortet.".format(correct_answers, question_count))
-    input("Drücke Enter, um das Programm zu beenden.")
+    while asked_questions:
+        retry = input("Möchtest du die falschen Fragen nochmal üben? (j/n): ")
+        if retry.lower() == "j":
+            for question, options in asked_questions:
+                if ask_question(question, options):
+                    asked_questions.remove((question, options))
+        else:
+            break
+    if not asked_questions:
+        play_again = input("Glückwunsch! Du hast alle Fragen richtig beantwortet. Möchtest du nochmal spielen? (j/n): ")
+        if play_again.lower() == "j":
+            play_game()
+    else:
+        input("Drücke Enter, um das Programm zu beenden.")
+
+play_game()
 
 play_game()
