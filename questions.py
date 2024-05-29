@@ -309,5 +309,135 @@ questionsINF = {
         "b": "Eine Anzeigeeinstellung für mobile Geräte",
         "c": "Ein spezielles HTML-Tag für Videos",
         "correct": "a"
-    }
+    },
+
+    # skript fragen schüler
+    "Worauf lässt sich der Erfolg des WWW zurückführen?": {
+        "a": "Auf benutzerfreundliche Möglichkeiten, einfach an Informationen zu kommen",
+        "b": "Auf offene Standards, die es jedem ermöglichen, Webseiten zu erstellen",
+        "c": "Beides",
+        "correct": "c"
+    },
+
+    "Was versteht man unter dem Request- Response-Schema?": {
+        "a": "Eine Methode zur Kommunikation zwischen Browser und Server",
+        "b": "Ein Schema zur Organisation von Datenbankabfragen",
+        "c": "Eine Möglichkeit, Daten zwischen Client und Server auszutauschen",
+        "correct": "c"
+    },
+    "Worauf war die ursprüngliche Version von HTTP ausgerichtet?": {
+        "a": "Auf die Übertragung von Hypertextdokumenten zwischen Server und Client",
+        "b": "Auf die Integration von Videostreaming in Webseiten",
+        "c": "Auf die Bereitstellung von E-Mail-Diensten im Web",
+        "correct": "a"
+    },
+    "Wie können seit HTTP 1.1 in beide Richtungen mehr Informationen übergeben werden?": {
+        "a": "Durch die Einführung von Headern",
+        "b": "Durch die Integration von Videostreaming",
+        "c": "Durch die Nutzung von Datenbankabfragen",
+        "correct": "a"
+    },
+    "Was bringt die Möglichkeit persistenter Verbindungen?": {
+        "a": "Das spart Wartezeiten",
+        "b": "Das ermöglicht die Übertragung großer Videodateien",
+        "c": "Das verbessert die Verschlüsselung von Daten",
+        "correct": "a"
+    },
+    "Beschreiben Sie den Ablauf einer HTTP-Verbindung (textuell oder grafisch)": {
+        "a": "Eine grafische Darstellung des TCP-Handshakes",
+        "b": "Eine textuelle Beschreibung des Verbindungsaufbaus und Datenaustauschs",
+        "c": "Eine Erklärung der HTTP-Methoden",
+        "correct": "b"
+    },
+    "Was bewirkt eine HTTP-Methode ohne Angabe eines Ziels?": {
+        "a": "Eine fehlerhafte HTTP-Anfrage",
+        "b": "Eine automatische Weiterleitung zum Index",
+        "c": "Eine Benachrichtigung über neue HTTP-Methoden",
+        "correct": "a"
+    },
+    "Erklären Sie den Begriff Status-Code im Zusammenhang mit dem HTTP-Response.": {
+        "a": "Eine eindeutige Bezeichnung für die Art der HTTP-Anfrage",
+        "b": "Eine Information über den Erfolg oder Misserfolg einer HTTP-Anfrage",
+        "c": "Eine Art von Passwort für sichere HTTP-Verbindungen",
+        "correct": "b"
+    },
+    "Was versteht man unter einer Reason-Phrase im HTTP-Response?": {
+        "a": "Eine Kurzbeschreibung des Anfrageziels",
+        "b": "Eine kurze Erklärung für den Status-Code",
+        "c": "Eine spezifische Information über den Server",
+        "correct": "b"
+    },
+    "Was versteht man unter einer HTTP-Methode?": {
+        "a": "Eine Methode zur Organisation von Datenbankabfragen",
+        "b": "Eine Art, wie der Server auf HTTP-Anfragen reagiert",
+        "c": "Eine Beschreibung, welche Aktion der Client ausführen möchte",
+        "correct": "c"
+    },
+    "Für was wird die HTTP-GET-Methode verwendet?": {
+        "a": "Um Daten an den Server zu senden",
+        "b": "Um Daten vom Server anzufordern",
+        "c": "Um eine neue Ressource zu erstellen",
+        "correct": "b"
+    },
+    "Für was wird die HTTP-POST-Methode verwendet?": {
+        "a": "Um eine Webseite anzuzeigen",
+        "b": "Um Daten zum Server zu senden",
+        "c": "Um eine Datei herunterzuladen",
+        "correct": "b"
+    },
+     "Nennen Sie mind. 3 Themenbereiche für eine Webseite:": {
+        "a": "E-Commerce, Information, Unternehmen",
+        "b": "Soziale Netzwerke, Banking, Elektronik",
+        "c": "Fotografie, Handwerk, Lebensmittel",
+        "correct": "a"
+    },
+    "Wie könnte man eine Webseite zum Geld verdienen nutzen?": {
+        "a": "Durch das Versenden von Spam-Mails",
+        "b": "Durch Platzieren von Anzeigen und Affiliate-Links",
+        "c": "Durch das Posten von kostenfreien Blogbeiträgen",
+        "correct": "b"
+    },
+    "Wie werden HTML-Tags geschrieben, was beschreibt ein HTML-Tag?": {
+        "a": "HTML-Tags werden in eckigen Klammern geschrieben und enthalten nur Zahlen.",
+        "b": "HTML-Tags werden in spitzen Klammern geschrieben und enthalten einen Tagnamen.",
+        "c": "HTML-Tags werden ohne Klammern geschrieben und enthalten beliebige Zeichen.",
+        "correct": "b"
+    },
+    "Was ist die Hauptaufgabe des Browsers?": {
+        "a": "Die Speicherung von Passwörtern",
+        "b": "Die Ausführung von Server-seitigen Scripten",
+        "c": "Die Darstellung von Webseiteninhalten",
+        "correct": "c"
+    },
+    "Was versteht man im Zusammenhang mit Browsern unter 'Rendering'?": {
+        "a": "Die Darstellung von Webseiteninhalten nach der Interpretation von HTML-/CSS-/JavaScript-Code.",
+        "b": "Die Ausführung von JavaScript-Funktionen im Browser",
+        "c": "Die Umwandlung von Bildern in Webseiteninhalte",
+        "correct": "a"
+    },
+    "Wodurch entstehen geräteabhängige Unterschiede bei der Anzeige von Webseiten?": {
+        "a": "Durch unterschiedliche Internetverbindungen",
+        "b": "Durch unterschiedliche Bildschirmauflösungen, Browserkompatibilität und Betriebssysteme",
+        "c": "Durch unterschiedliche IP-Adressen",
+        "correct": "b"
+    },
+    "Wodurch entstehen herstellerabhängige Unterschiede bei der Anzeige von Webseiten?": {
+        "a": "Durch die Art der verwendeten Maus",
+        "b": "Durch die verwendete Programmiersprache der Webseite",
+        "c": "Durch unterschiedliche Browser-Engines, Webstandards und die Unterstützung neuer Funktionen",
+        "correct": "c"
+    },
+    "Welche Unterschiede können durch unterschiedliche Betriebssysteme erfolgen?": {
+        "a": "Durch die Farbe des Betriebssystem-Logos",
+        "b": "Durch unterschiedliche Schriftarten, UI-Stile und Dateisysteme",
+        "c": "Durch die Position der Taskleiste",
+        "correct": "b"
+    },
+    "Welche Vorteile entstehen durch die Nutzung von HTML und CSS?": {
+        "a": "HTML und CSS sind schwer zu erlernen und verlangsamen die Webseite",
+        "b": "HTML und CSS ermöglichen die Trennung von Struktur und Design, verbessern die Lesbarkeit des Codes und unterstützen die Suchmaschinenoptimierung",
+        "c": "HTML und CSS benötigen teure Software zur Bearbeitung",
+        "correct": "b"
+    },
+
 }
