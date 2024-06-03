@@ -250,194 +250,190 @@ questionsDTSM= {
 
 }
 questionsINF = {
-    "Was ist HTML?": {
-        "a": "Ein Programm zur Bildbearbeitung",
-        "b": "Eine Auszeichnungssprache zur Strukturierung von Webinhalten",
-        "c": "Ein Betriebssystem für mobile Geräte",
-        "correct": "b"
-    },
-    "Wofür steht CSS?": {
-        "a": "Cascading Style Sheets",
-        "b": "Computer Style Sheets",
-        "c": "Creative Style Selector",
-        "correct": "a"
-    },
-    "Was ist der Zweck von CSS?": {
-        "a": "Zur Definition der Struktur einer Webseite",
-        "b": "Zur Interaktion mit Benutzern auf einer Webseite",
-        "c": "Zur Gestaltung des Aussehens einer Webseite",
-        "correct": "c"
-    },
-    "Was ist ein HTML-Tag?": {
-        "a": "Eine Textdatei in HTML-Format",
-        "b": "Ein spezielles Element zur Strukturierung von Webinhalten",
-        "c": "Eine Art von Video auf einer Webseite",
-        "correct": "b"
-    },
-    "Was bedeutet das Akronym 'URL'?": {
-        "a": "Universal Resource Locator",
-        "b": "Uniform Relative Link",
-        "c": "Unified Responsive Layout",
-        "correct": "a"
-    },
-    "Was ist das Ziel von Responsive Webdesign?": {
-        "a": "Eine Website so zu gestalten, dass sie auf verschiedenen Geräten gut aussieht und funktioniert",
-        "b": "Eine Website so zu gestalten, dass sie nur auf Desktop-Computern angezeigt wird",
-        "c": "Eine Website so zu gestalten, dass sie besonders langsam lädt",
-        "correct": "a"
-    },
-    "Welches HTML-Element wird verwendet, um Text fett zu formatieren?": {
-        "a": "<strong>",
-        "b": "<bold>",
-        "c": "<b>",
-        "correct": "a"
-    },
-    "Was ist der Zweck des 'box model' in CSS?": {
-        "a": "Zur Darstellung von animierten Boxen auf einer Webseite",
-        "b": "Zur Berechnung der Größe und Position von Elementen auf einer Webseite",
-        "c": "Zur Definition von Boxen für den Versand von Webinhalten",
-        "correct": "b"
-    },
-    "Was ist ein Selector in CSS?": {
-        "a": "Eine Methode zur Benutzerinteraktion auf einer Webseite",
-        "b": "Ein Stilattribut für Text auf einer Webseite",
-        "c": "Eine Methode zur Auswahl von HTML-Elementen für die Anwendung von Stilen",
-        "correct": "c"
-    },
-    "Was ist ein Div-Element in HTML?": {
-        "a": "Ein Container-Element zur Gruppierung anderer Elemente",
-        "b": "Eine Anzeigeeinstellung für mobile Geräte",
-        "c": "Ein spezielles HTML-Tag für Videos",
-        "correct": "a"
-    },
-
-    # skript fragen schüler
+    # HTTP Request-Response Fragen
     "Worauf lässt sich der Erfolg des WWW zurückführen?": {
-        "a": "Auf benutzerfreundliche Möglichkeiten, einfach an Informationen zu kommen",
-        "b": "Auf offene Standards, die es jedem ermöglichen, Webseiten zu erstellen",
-        "c": "Beides",
-        "correct": "c"
+        "a": "Das WWW wurde für eine benutzerfreundliche Möglichkeit entwickelt, einfach an Informationen zu kommen. Außerdem kann durch offene Standards jeder Webseiten erstellen.",
+        "b": "Das WWW basiert auf proprietären Standards, die nur von wenigen genutzt werden können.",
+        "c": "Das WWW wurde entwickelt, um nur Textinformationen zu übertragen.",
+        "correct": "a"
     },
-
-    "Was versteht man unter dem Request- Response-Schema?": {
-        "a": "Eine Methode zur Kommunikation zwischen Browser und Server",
-        "b": "Ein Schema zur Organisation von Datenbankabfragen",
-        "c": "Eine Möglichkeit, Daten zwischen Client und Server auszutauschen",
-        "correct": "c"
+    "Was versteht man unter dem Request-Response-Schema?": {
+        "a": "Der Server stellt eine Anfrage (Request) an den Client und der Client antwortet (Response).",
+        "b": "Als Client stellt man eine Anfrage (Request) an einen Server, der einem Informationen liefern soll. Diese Anfrage enthält meist Details, was für Informationen verlangt werden (z.B GET/POST-Methoden). Darauf sendet der Server eine Antwort (Response), ob die Informationen erfolgreich überbracht wurden. Diese werden in Statuscodes an den Client überbracht.",
+        "c": "Request-Response-Schema beschreibt den Austausch von Dateien zwischen zwei Servern.",
+        "correct": "b"
     },
     "Worauf war die ursprüngliche Version von HTTP ausgerichtet?": {
-        "a": "Auf die Übertragung von Hypertextdokumenten zwischen Server und Client",
-        "b": "Auf die Integration von Videostreaming in Webseiten",
-        "c": "Auf die Bereitstellung von E-Mail-Diensten im Web",
-        "correct": "a"
+        "a": "Auf die Übertragung von Bildern.",
+        "b": "Auf die Übertragung von Hypertextdokumenten zwischen Server und Client.",
+        "c": "Auf die Übertragung von Audio und Video.",
+        "correct": "b"
     },
     "Wie können seit HTTP 1.1 in beide Richtungen mehr Informationen übergeben werden?": {
-        "a": "Durch die Einführung von Headern",
-        "b": "Durch die Integration von Videostreaming",
-        "c": "Durch die Nutzung von Datenbankabfragen",
-        "correct": "a"
+        "a": "Durch die Einführung von verschlüsselten Verbindungen.",
+        "b": "Durch die Einführung von Headern und Cookies.",
+        "c": "Durch die Verwendung von XML.",
+        "correct": "b"
     },
     "Was bringt die Möglichkeit persistenter Verbindungen?": {
-        "a": "Das spart Wartezeiten",
-        "b": "Das ermöglicht die Übertragung großer Videodateien",
-        "c": "Das verbessert die Verschlüsselung von Daten",
-        "correct": "a"
+        "a": "Erhöhte Wartezeiten und Ressourcenverbrauch.",
+        "b": "Die Notwendigkeit, für jede Anfrage eine neue Verbindung aufzubauen.",
+        "c": "Sparung von Wartezeiten und effizientere Nutzung von Ressourcen.",
+        "correct": "c"
     },
     "Beschreiben Sie den Ablauf einer HTTP-Verbindung (textuell oder grafisch)": {
-        "a": "Eine grafische Darstellung des TCP-Handshakes",
-        "b": "Eine textuelle Beschreibung des Verbindungsaufbaus und Datenaustauschs",
-        "c": "Eine Erklärung der HTTP-Methoden",
+        "a": "Der Server sendet eine Anfrage an den Client, der Client antwortet, und die Verbindung wird geschlossen.",
+        "b": "Der Client öffnet eine TCP-Verbindung zum Server, stellt eine HTTP-Anfrage, der Server antwortet mit einem Statuscode und der Inhalt wird gerendert. Bei persistenten Verbindungen bleibt die Verbindung bestehen.",
+        "c": "Der Client stellt eine Anfrage an den DNS-Server, der die IP-Adresse des Webservers liefert.",
         "correct": "b"
     },
     "Was bewirkt eine HTTP-Methode ohne Angabe eines Ziels?": {
-        "a": "Eine fehlerhafte HTTP-Anfrage",
-        "b": "Eine automatische Weiterleitung zum Index",
-        "c": "Eine Benachrichtigung über neue HTTP-Methoden",
-        "correct": "a"
-    },
-    "Erklären Sie den Begriff Status-Code im Zusammenhang mit dem HTTP-Response.": {
-        "a": "Eine eindeutige Bezeichnung für die Art der HTTP-Anfrage",
-        "b": "Eine Information über den Erfolg oder Misserfolg einer HTTP-Anfrage",
-        "c": "Eine Art von Passwort für sichere HTTP-Verbindungen",
+        "a": "Die Anfrage ist erfolgreich, aber es wird keine Antwort gesendet.",
+        "b": "Die HTTP-Anfrage ist unvollständig und führt zu einem fehlerhaften Request.",
+        "c": "Der Server führt eine Standardaktion aus.",
         "correct": "b"
     },
+    "Erklären Sie den Begriff Status-Code im Zusammenhang mit dem HTTP-Response.": {
+        "a": "Status-Codes geben den Erfolg oder Misserfolg einer Anfrage an und werden in 5 Klassen unterteilt: 1xx, 2xx, 3xx, 4xx, 5xx.",
+        "b": "Status-Codes sind nur bei Fehlermeldungen relevant.",
+        "c": "Status-Codes werden verwendet, um die Geschwindigkeit einer Anfrage zu messen.",
+        "correct": "a"
+    },
     "Was versteht man unter einer Reason-Phrase im HTTP-Response?": {
-        "a": "Eine Kurzbeschreibung des Anfrageziels",
-        "b": "Eine kurze Erklärung für den Status-Code",
-        "c": "Eine spezifische Information über den Server",
+        "a": "Eine Reason-Phrase ist ein numerischer Code, der den Erfolg einer Anfrage anzeigt.",
+        "b": "Die Reason-Phrase beschreibt kurz, für was der jeweilige Statuscode steht.",
+        "c": "Eine Reason-Phrase ist ein spezieller Header in HTTP-Anfragen.",
         "correct": "b"
     },
     "Was versteht man unter einer HTTP-Methode?": {
-        "a": "Eine Methode zur Organisation von Datenbankabfragen",
-        "b": "Eine Art, wie der Server auf HTTP-Anfragen reagiert",
-        "c": "Eine Beschreibung, welche Aktion der Client ausführen möchte",
-        "correct": "c"
+        "a": "Eine HTTP-Methode beschreibt, welche Aktion der Client versucht, auszuführen, wie GET oder POST.",
+        "b": "Eine HTTP-Methode ist ein Sicherheitsprotokoll für Webanfragen.",
+        "c": "Eine HTTP-Methode ist ein Netzwerkprotokoll für den Datenaustausch.",
+        "correct": "a"
     },
     "Für was wird die HTTP-GET-Methode verwendet?": {
-        "a": "Um Daten an den Server zu senden",
-        "b": "Um Daten vom Server anzufordern",
-        "c": "Um eine neue Ressource zu erstellen",
+        "a": "Um Daten zum Server zu senden und neue Ressourcen zu erstellen.",
+        "b": "Um Daten einer Ressource anzufordern.",
+        "c": "Um eine bestehende Ressource zu löschen.",
         "correct": "b"
     },
     "Für was wird die HTTP-POST-Methode verwendet?": {
-        "a": "Um eine Webseite anzuzeigen",
-        "b": "Um Daten zum Server zu senden",
-        "c": "Um eine Datei herunterzuladen",
-        "correct": "b"
+        "a": "Um Daten einer Ressource anzufordern.",
+        "b": "Um eine bestehende Ressource zu löschen.",
+        "c": "Um Daten zum Server zu senden und neue Ressourcen zu erstellen.",
+        "correct": "c"
     },
-     "Nennen Sie mind. 3 Themenbereiche für eine Webseite:": {
+
+    # HTML Teil 1 Fragen
+    "Nennen Sie mind. 3 Themenbereiche für eine Webseite:": {
         "a": "E-Commerce, Information, Unternehmen",
-        "b": "Soziale Netzwerke, Banking, Elektronik",
-        "c": "Fotografie, Handwerk, Lebensmittel",
+        "b": "Sport, Freizeit, Mode",
+        "c": "Reisen, Musik, Kunst",
         "correct": "a"
     },
     "Wie könnte man eine Webseite zum Geld verdienen nutzen?": {
-        "a": "Durch das Versenden von Spam-Mails",
-        "b": "Durch Platzieren von Anzeigen und Affiliate-Links",
-        "c": "Durch das Posten von kostenfreien Blogbeiträgen",
-        "correct": "b"
-    },
-    "Wie werden HTML-Tags geschrieben, was beschreibt ein HTML-Tag?": {
-        "a": "HTML-Tags werden in eckigen Klammern geschrieben und enthalten nur Zahlen.",
-        "b": "HTML-Tags werden in spitzen Klammern geschrieben und enthalten einen Tagnamen.",
-        "c": "HTML-Tags werden ohne Klammern geschrieben und enthalten beliebige Zeichen.",
-        "correct": "b"
-    },
-    "Was ist die Hauptaufgabe des Browsers?": {
-        "a": "Die Speicherung von Passwörtern",
-        "b": "Die Ausführung von Server-seitigen Scripten",
-        "c": "Die Darstellung von Webseiteninhalten",
-        "correct": "c"
-    },
-    "Was versteht man im Zusammenhang mit Browsern unter 'Rendering'?": {
-        "a": "Die Darstellung von Webseiteninhalten nach der Interpretation von HTML-/CSS-/JavaScript-Code.",
-        "b": "Die Ausführung von JavaScript-Funktionen im Browser",
-        "c": "Die Umwandlung von Bildern in Webseiteninhalte",
+        "a": "Durch Platzieren von Anzeigen und Affiliate-Links.",
+        "b": "Durch das Vermeiden von Werbung.",
+        "c": "Durch das kostenlose Anbieten aller Inhalte.",
         "correct": "a"
     },
-    "Wodurch entstehen geräteabhängige Unterschiede bei der Anzeige von Webseiten?": {
-        "a": "Durch unterschiedliche Internetverbindungen",
-        "b": "Durch unterschiedliche Bildschirmauflösungen, Browserkompatibilität und Betriebssysteme",
-        "c": "Durch unterschiedliche IP-Adressen",
-        "correct": "b"
-    },
-    "Wodurch entstehen herstellerabhängige Unterschiede bei der Anzeige von Webseiten?": {
-        "a": "Durch die Art der verwendeten Maus",
-        "b": "Durch die verwendete Programmiersprache der Webseite",
-        "c": "Durch unterschiedliche Browser-Engines, Webstandards und die Unterstützung neuer Funktionen",
+    "Wie werden HTML-Tags geschrieben, was beschreibt ein HTML-Tag?": {
+        "a": "Ein HTML-Tag enthält einen Tagnamen innerhalb von runden Klammern (()), der Inhalt des Tags steht zwischen einem Öffnungstag (tag) und einem Schließtag (/tag).",
+        "b": "Ein HTML-Tag enthält einen Tagnamen innerhalb von eckigen Klammern ([]), der Inhalt des Tags steht zwischen einem Öffnungstag ([tag]) und einem Schließtag ([/tag]).",
+        "c": "Ein HTML-Tag enthält einen Tagnamen innerhalb von spitzen Klammern (<>), der Inhalt des Tags steht zwischen einem Öffnungstag (<tag>) und einem Schließtag (</tag>).",
         "correct": "c"
     },
+    "Was ist die Hauptaufgabe des Browsers?": {
+        "a": "Die Webseiteninhalte korrekt darzustellen.",
+        "b": "Die Webseiteninhalte zu blockieren.",
+        "c": "Die Webseiteninhalte zu speichern.",
+        "correct": "a"
+    },
+    "Was versteht man im Zusammenhang mit Browsern unter 'Rendering'?": {
+        "a": "Das Blockieren von Werbung auf Webseiten.",
+        "b": "Das Interpretieren von HTML-/CSS-/JavaScript-Code und die darauffolgende Darstellung der Inhalte vom Webserver.",
+        "c": "Das Speichern von Webseiteninhalten auf dem Server.",
+        "correct": "b"
+    },
+    "Wodurch entstehen geräteabhängige Unterschiede bei der Anzeige von Webseiten?": {
+        "a": "Durch unterschiedliche Bildschirmauflösungen/-größen, Browserkompatibilität und Betriebssysteme.",
+        "b": "Durch die Internetgeschwindigkeit des Nutzers.",
+        "c": "Durch die Farbeinstellungen des Monitors.",
+        "correct": "a"
+    },
+    "Wodurch entstehen herstellerabhängige Unterschiede bei der Anzeige von Webseiten?": {
+        "a": "Durch verschiedene Browser-Engines, Webstandards oder neuwertige Funktionen, die nicht jeder Browser unterstützt.",
+        "b": "Durch die Internetgeschwindigkeit des Nutzers.",
+        "c": "Durch die Farbeinstellungen des Monitors.",
+        "correct": "a"
+    },
     "Welche Unterschiede können durch unterschiedliche Betriebssysteme erfolgen?": {
-        "a": "Durch die Farbe des Betriebssystem-Logos",
-        "b": "Durch unterschiedliche Schriftarten, UI-Stile und Dateisysteme",
-        "c": "Durch die Position der Taskleiste",
+        "a": "Durch die Farbgebung der Benutzeroberfläche.",
+        "b": "Durch die Art, wie Schriftarten gerendert werden oder ob sie vorhanden sind, sowie verschiedene UI-Stile und Dateisysteme.",
+        "c": "Durch die Bildschirmauflösung.",
         "correct": "b"
     },
     "Welche Vorteile entstehen durch die Nutzung von HTML und CSS?": {
-        "a": "HTML und CSS sind schwer zu erlernen und verlangsamen die Webseite",
-        "b": "HTML und CSS ermöglichen die Trennung von Struktur und Design, verbessern die Lesbarkeit des Codes und unterstützen die Suchmaschinenoptimierung",
-        "c": "HTML und CSS benötigen teure Software zur Bearbeitung",
+        "a": "HTML und CSS verbessern die Ladezeit von Webseiten drastisch.",
+        "b": "HTML und CSS garantieren Konsistenz von Regeln und Anpassungsfähigkeit. Getrennte CSS-Inhalte machen den Code lesbarer und verbessern die Suchmaschinenoptimierung.",
+        "c": "HTML und CSS verhindern, dass Webseiten gehackt werden.",
         "correct": "b"
     },
 
+    # HTML Teil 2 Fragen
+    "Was versteht man in der Web-Entwicklung unter mobile-first?": {
+        "a": "Ansatz der Web-Entwicklung, bei dem das Design und die Entwicklung einer Website oder Anwendung zuerst für Desktop-Computer optimiert werden.",
+        "b": "Ansatz der Web-Entwicklung, bei dem das Design und die Entwicklung einer Website oder Anwendung zuerst für mobile Endgeräte optimiert werden.",
+        "c": "Ansatz der Web-Entwicklung, bei dem das Design und die Entwicklung einer Website oder Anwendung gleichzeitig für alle Gerätetypen optimiert werden.",
+        "correct": "b"
+    },
+    "Was ist die Stärke von Flexbox in CSS?": {
+        "a": "Flexbox kann komplexe Layouts auf einfache und flexible Weise erstellen. Vorteile sind zudem Responsive Design, das leichte Anordnen von Elementen und die Verteilung von Platz zwischen und innerhalb von Elementen.",
+        "b": "Flexbox ist speziell für die Gestaltung von Tabellen gedacht.",
+        "c": "Flexbox ist hauptsächlich für die Gestaltung von Formularen nützlich.",
+        "correct": "a"
+    },
+    "Welche Arten von 'Links' gibt es?": {
+        "a": "Text-Link, Bild-Link, Video-Link, Audio-Link",
+        "b": "Text-Link, Bild-Link, E-Mail-Link, Telefonnummer-Link, Verweis auf ein Dokument, Verweis auf eine externe Webseite",
+        "c": "Text-Link, Dokument-Link, Script-Link, PDF-Link",
+        "correct": "b"
+    },
+    "Nennen Sie ein Argument warum verbundene Zellen innerhalb einer HTML-Table vermeiden soll?": {
+        "a": "Verbundene Zellen machen die Tabelle hübscher.",
+        "b": "Verbundene Zellen können die Struktur der Daten verzerren und die Zugänglichkeit beeinträchtigen, z.B bei Screenreadern.",
+        "c": "Verbundene Zellen verbessern die Ladezeit der Tabelle.",
+        "correct": "b"
+    },
+    "Wie sind HTML-Tabellen aufgebaut?": {
+        "a": "<table>-Tag am Anfang, <tr>-Tag (Table Row) für Tabellenzeile, <td>-Tag (Table Data) für Inhalt der Zelle, <th> (Table Header) für Überschriften. Wahlweise mit <thead>, <tbody> und <tfoot> ergänzen.",
+        "b": "<table>-Tag am Anfang, <row>-Tag für Tabellenzeile, <cell>-Tag für Inhalt der Zelle, <header> für Überschriften.",
+        "c": "<table>-Tag am Anfang, <line>-Tag für Tabellenzeile, <data>-Tag für Inhalt der Zelle, <head> für Überschriften.",
+        "correct": "a"
+    },
+    "Was ist der Unterschied zwischen einer 'id' und einer 'class'. Wie würde der CSS-Selektor für class='ziel' bzw. id='ziel' aussehen?": {
+        "a": "Die 'id' ist ein eindeutiger Bezeichner für ein bestimmtes Element, während 'class' eine Gruppe von Elementen kennzeichnet. CSS-Selektor für id='ziel': .ziel, für class='ziel': #ziel.",
+        "b": "Die 'id' ist ein Bezeichner für eine Gruppe von Elementen, während 'class' ein eindeutiger Bezeichner für ein bestimmtes Element ist. CSS-Selektor für id='ziel': #ziel, für class='ziel': .ziel.",
+        "c": "Die 'id' ist ein eindeutiger Bezeichner für ein bestimmtes Element, während 'class' eine Gruppe von Elementen kennzeichnet. CSS-Selektor für id='ziel': #ziel, für class='ziel': .ziel.",
+        "correct": "c"
+    },
+    "Nennen Bildformate mit verlustbehafteter Kompression? Welcher Vorteil wird welchem Nachteil bei Kompression entgegengestellt?": {
+        "a": "JPEG, PNG, SVG: Vorteil: bessere Farbtreue, Nachteil: größere Dateigröße.",
+        "b": "JPEG, WebP, GIF: Vorteil: Dateigröße wird erheblich reduziert, Nachteil: Qualitätsverlust im Bild, bei starken Kompressionsraten Unschärfen.",
+        "c": "JPEG, BMP, TIFF: Vorteil: höhere Auflösung, Nachteil: längere Ladezeiten.",
+        "correct": "b"
+    },
+    "Erklären Sie den Begriff Status-Code im Zusammenhang mit dem HTTP-Response.": {
+        "a": "Der Status-Code beschreibt eine numerische Kennzeichnung, die den Zustand einer Anfrage an den Server widerspiegelt. Die erste Ziffer des Status-Codes gibt die allgemeine Kategorie des Status an: 1xx: Informational, 2xx: Success, 3xx: Redirection, 4xx: Client Error, 5xx: Server Error.",
+        "b": "Der Status-Code beschreibt die Geschwindigkeit einer Anfrage an den Server.",
+        "c": "Der Status-Code gibt an, welche Datei auf dem Server angefragt wurde.",
+        "correct": "a"
+    },
+    "Was versteht man bei Bildern unter Transparenz? Bei welchen Bildformaten ist dies möglich?": {
+        "a": "Transparenz bezieht sich darauf, dass es einen transparenten Hintergrund gibt, sodass der darunterliegende Inhalt sichtbar ist. Transparenz ist bei PNG, GIF, SVG und WebP möglich.",
+        "b": "Transparenz bezieht sich auf die Fähigkeit eines Bildes, ohne Qualitätsverlust zu komprimieren. Transparenz ist bei JPEG, BMP und TIFF möglich.",
+        "c": "Transparenz bezieht sich auf die Möglichkeit, ein Bild in verschiedenen Farbtiefen darzustellen. Transparenz ist bei BMP, TIFF und RAW möglich.",
+        "correct": "a"
+    }
 }
+
