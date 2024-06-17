@@ -1,10 +1,10 @@
 import random
-from questions import questionsDTSM, questionsINF
+from questions import questionsDTSM, questionsINF, questionsCSHARP
 
-questions = {"DTSM": questionsDTSM, "INF": questionsINF}
+questions = {"DTSM": questionsDTSM, "INF": questionsINF, "CSHARP": questionsCSHARP}
 
 def choose_question_set():
-    user_choice = input("Welchen Fragendatensatz möchtest du verwenden? (DTSM/INF): ").upper()
+    user_choice = input("Welchen Fragendatensatz möchtest du verwenden? (DTSM/INF/CSHARP): ").upper()
     if user_choice in questions:
         return questions[user_choice]
     else:
