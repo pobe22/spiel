@@ -70,7 +70,7 @@ def play_game():
         play_again = input("Glückwunsch! Du hast alle Fragen richtig beantwortet. Möchtest du nochmal spielen? (j/n): ")
         if play_again.lower() == "j":
             play_game()
-    else:
-        input("Drücke Enter, um das Programm zu beenden.")
+        else:
+            input("Drücke Enter, um das Programm zu beenden.")
 
 play_game()
