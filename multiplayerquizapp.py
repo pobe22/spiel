@@ -2,11 +2,11 @@ import tkinter as tk
 from tkinter import messagebox
 import threading
 import time
-import socket
 import random
-from questions import questionsDTSM, questionsINF
+import socket
+from questions import questionsDTSM, questionsINF, questionsCSHARP
 
-questions = {"DTSM": questionsDTSM, "INF": questionsINF}
+questions = {"DTSM": questionsDTSM, "INF": questionsINF, "CSHARP": questionsCSHARP}
 
 
 class MultiplayerQuizApp:
@@ -24,6 +24,10 @@ class MultiplayerQuizApp:
         self.game_code = None
         self.server = None
         self.client = None
+        self.conn = None  
+        self.addr = None
+        self.server_thread = None
+        self.client_thread = None
 
         self.question_label = tk.Label(self.root, text="", wraplength=550, justify="left")
         self.option_a = tk.Button(self.root, text="", command=lambda: self.check_answer('a'))
@@ -31,12 +35,13 @@ class MultiplayerQuizApp:
         self.option_c = tk.Button(self.root, text="", command=lambda: self.check_answer('c'))
         self.next_button = tk.Button(self.root, text="Nächste Frage", command=self.next_question, state=tk.DISABLED)
         self.retry_button = tk.Button(self.root, text="Erneut versuchen", command=self.retry_questions, state=tk.DISABLED)
+        
+        self.result_label = tk.Label(root, text="")
 
         self.main_frame = tk.Frame(self.root)
         self.main_frame.pack()
 
         self.create_main_screen()
-
 
     def create_main_screen(self):
         self.main_frame.destroy()
@@ -64,6 +69,9 @@ class MultiplayerQuizApp:
 
         self.create_button_inf = tk.Button(self.main_frame, text="INF", command=lambda: self.create_game("INF"))
         self.create_button_inf.pack(pady=5)
+        
+        self.create_button_csharp = tk.Button(self.main_frame, text="CSHARP", command=lambda: self.create_game("CSHARP"))
+        self.create_button_csharp.pack(pady=5)
 
         self.start_game_button = tk.Button(self.main_frame, text="Spiel starten", command=self.start_game, state=tk.DISABLED)
         self.start_game_button.pack(pady=10)
@@ -105,20 +113,42 @@ class MultiplayerQuizApp:
             messagebox.showerror("Fehler", "Ungültiger Spielcode. Bitte geben Sie eine Zahlenkombination ein.")
     
     def start_server(self):
-        # Hier ergänzen Sie die Logik, um einen Server zu starten, der auf eingehende Verbindungen wartet
-        pass
+        def server_thread():
+            self.server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            self.server.bind(('0.0.0.0', self.game_code))
+            self.server.listen(1)
+            self.conn, self.addr = self.server.accept()
+            self.receive_data()
+
+        self.server_thread = threading.Thread(target=server_thread)
+        self.server_thread.start()
 
     def start_client(self):
-        # Hier ergänzen Sie die Logik, um einen Client zu starten, der sich mit dem Server verbindet
-        pass
+        def client_thread():
+            self.client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            self.client.connect(('localhost', self.game_code))
+            self.receive_data()
+
+        self.client_thread = threading.Thread(target=client_thread)
+        self.client_thread.start()
 
     def receive_data(self):
-        # Hier ergänzen Sie die Logik, um Daten vom Server oder Client zu empfangen
-        pass
+            conn = self.conn if self.conn else self.client
+            while True:
+                try:
+                    data = conn.recv(1024).decode('utf-8')
+                    if data:
+                        print("Received:", data)
+                except Exception as e:
+                    print("Error receiving data:", e)
+                    break
 
-    def send_data(self):
-        # Hier ergänzen Sie die Logik, um Daten an den Server oder Client zu senden
-        pass
+    def send_data(self, data):
+        conn = self.conn if self.conn else self.client
+        try:
+            conn.sendall(data.encode('utf-8'))
+        except Exception as e:
+            print("Error sending data:", e)
 
     def start_game(self):
         self.main_frame.destroy()
@@ -166,6 +196,9 @@ class MultiplayerQuizApp:
         self.timer_label = tk.Label(self.main_frame, text=f"Restliche Zeit: {self.answer_time} Sekunden")
         self.timer_label.pack(pady=10)
 
+        # Punktestand
+        self.score_label = tk.Label(self.main_frame, text="Punktestand: 0")
+        self.score_label.pack(pady=10)
 
     def start_timer(self):
         self.answer_time = 15
@@ -198,8 +231,6 @@ class MultiplayerQuizApp:
             self.answer_label.config(text=f"Falsch. Die richtige Antwort ist: {options['correct']}", fg="red")
             self.asked_questions.append((question, options))
         self.next_button.config(state=tk.NORMAL)
-
-
 
     def next_question(self):
         self.current_question += 1
