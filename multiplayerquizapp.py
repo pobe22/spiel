@@ -201,7 +201,7 @@ class MultiplayerQuizApp:
         self.score_label.pack(pady=10)
 
     def start_timer(self):
-        self.answer_time = 15
+        self.answer_time = 30
         threading.Thread(target=self.timer_thread).start()
 
     def timer_thread(self):
@@ -223,13 +223,22 @@ class MultiplayerQuizApp:
     def check_answer(self, answer):
         question, options = self.questions[self.current_question]
         if answer == options['correct']:
-            self.answer_label.config(text="Richtig!", fg="green")
-            self.correct_answers += 1
-            # Punktestand erhöhen basierend auf verbleibender Zeit
-            self.score_label.config(text=f"Punktestand: {self.correct_answers * self.answer_time}")
+            # Berechnung der Punkte für diese Frage
+            points_for_question = self.answer_time
+            
+            # Punktestand erhöhen
+            self.correct_answers += points_for_question
+            
+            # Punktestand anzeigen und speichern
+            self.score_label.config(text=f"Punktestand: {self.correct_answers}")
+            
+            # Antwortlabel aktualisieren
+            self.answer_label.config(text=f"Richtig! Du hast {points_for_question} Punkte erhalten.", fg="green")
         else:
             self.answer_label.config(text=f"Falsch. Die richtige Antwort ist: {options['correct']}", fg="red")
             self.asked_questions.append((question, options))
+    
+        # Nächsten Frage Button aktivieren
         self.next_button.config(state=tk.NORMAL)
 
     def next_question(self):
