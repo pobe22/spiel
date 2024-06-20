@@ -11,7 +11,6 @@
 - [Projektstruktur](#projektstruktur)
 - [Fragensätze](#fragensätze)
 - [Autoren](#autoren)
-- [Lizenz](#lizenz)
 
 ## Über das Projekt
 
@@ -81,8 +80,5 @@ Die Fragensätze sind in der Datei `questions.py` definiert und können leicht a
 
 ## Autoren
 
-- [Dein Name](https://github.com/deinbenutzername)
+- [pobe22](https://github.com/pobe)
 
-## Lizenz
-
-Dieses Projekt ist unter der MIT-Lizenz lizenziert.
