@@ -33,8 +33,8 @@ Mehrspieler Quiz ist ein unterhaltsames und interaktives Quiz-Spiel, das es Spie
 
 1. **Repository klonen**:
    ```bash
-   git clone https://github.com/deinbenutzername/mehrspieler-quiz.git
-   cd mehrspieler-quiz
+   git clone https://github.com/pobe22/spiel.git
+   cd spiel
    ```
 
 2. **Abhängigkeiten installieren**:
@@ -80,5 +80,5 @@ Die Fragensätze sind in der Datei `questions.py` definiert und können leicht a
 
 ## Autoren
 
-- [pobe22](https://github.com/pobe)
+- [pobe22](https://github.com/pobe22)
 
