@@ -1,15 +1,40 @@
 import random
-from questions import questionsDTSM, questionsINF, questionsCSHARP, questionsAWL
+from questions import questions2ADAC_DTSM, questions2ADAC_INF, questions2ADAC_CSHARP, questions2ADAC_AWL, questions3ADAC_DTSM
 
-questions = {"DTSM": questionsDTSM, "INF": questionsINF, "CSHARP": questionsCSHARP, "AWL" : questionsAWL}
+questions_2ADAC = {
+    "DTSM": questions2ADAC_DTSM,
+    "INF": questions2ADAC_INF,
+    "CSHARP": questions2ADAC_CSHARP,
+    "AWL": questions2ADAC_AWL
+}
 
-def choose_question_set():
-    user_choice = input("Welchen Fragendatensatz möchtest du verwenden? (DTSM/INF/CSHARP/AWL): ").upper()
-    if user_choice in questions:
-        return questions[user_choice]
-    else:
-        print("Ungültige Auswahl. Bitte wähle 'DTSM' oder 'INF'.")
-        return choose_question_set()
+questions_3ADAC = {
+    "DTSM": questions3ADAC_DTSM,
+}
+
+class_question_sets = {
+    "2ADAC": questions_2ADAC,
+    "3ADAC": questions_3ADAC
+}
+
+
+def choose_class():
+    while True:
+        user_class = input("Welche Klasse besuchst du? (2ADAC/3ADAC): ").upper()
+        if user_class in class_question_sets:
+            return user_class
+        else:
+            print("Ungültige Klasse. Bitte gib '2ADAC' oder '3ADAC' ein.")
+
+def choose_question_set(user_class):
+    available_sets = class_question_sets[user_class]
+    print(f"Für deine Klasse sind folgende Datensätze verfügbar: {', '.join(available_sets)}")
+    while True:
+        user_choice = input(f"Welchen Fragendatensatz möchtest du verwenden? ({'/'.join(available_sets)}): ").upper()
+        if user_choice in available_sets:
+            return available_sets[user_choice] 
+        else:
+            print(f"Ungültige Auswahl. Bitte wähle einen der verfügbaren Datensätze: {', '.join(available_sets)}.")
 
 def choose_question_count():
     while True:
@@ -21,10 +46,6 @@ def choose_question_count():
                 print("Bitte gib eine positive Zahl ein.")
         except ValueError:
             print("Ungültige Eingabe. Bitte gib eine ganze Zahl ein.")
-
-def choose_question():
-    question_set = choose_question_set()
-    return random.choice(list(question_set.items()))
 
 def ask_question(question, options):
     print(question)
@@ -45,7 +66,8 @@ def ask_question(question, options):
 
 def play_game():
     print("Willkommen beim Quiz!")
-    question_set = choose_question_set()
+    user_class = choose_class()
+    question_set = choose_question_set(user_class)
     questions = list(question_set.items())
     random.shuffle(questions)
     correct_answers = 0

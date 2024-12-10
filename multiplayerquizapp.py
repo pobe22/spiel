@@ -4,9 +4,9 @@ import threading
 import time
 import random
 import socket
-from questions import questionsDTSM, questionsINF, questionsCSHARP
+from questions import questions2ADAC_DTSM, questions2ADAC_INF, questions2ADAC_CSHARP
 
-questions = {"DTSM": questionsDTSM, "INF": questionsINF, "CSHARP": questionsCSHARP}
+questions = {"DTSM": questions2ADAC_DTSM, "INF": questions2ADAC_INF, "CSHARP": questions2ADAC_CSHARP}
 
 
 class MultiplayerQuizApp:

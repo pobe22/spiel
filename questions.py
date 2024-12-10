@@ -1,4 +1,4 @@
-questionsDTSM= {
+questions2ADAC_DTSM= {
     "Was ist die Hauptaufgabe eines Betriebssystems?": {
         "a": "Programme ausführen",
         "b": "Hardware verkaufen",
@@ -249,7 +249,7 @@ questionsDTSM= {
     },
 
 }
-questionsINF = {
+questions2ADAC_INF = {
     # HTTP Request-Response Fragen
     "Worauf lässt sich der Erfolg des WWW zurückführen?": {
         "a": "Das WWW wurde für eine benutzerfreundliche Möglichkeit entwickelt, einfach an Informationen zu kommen. Außerdem kann durch offene Standards jeder Webseiten erstellen.",
@@ -436,7 +436,7 @@ questionsINF = {
         "correct": "a"
     },
 }
-questionsCSHARP = {
+questions2ADAC_CSHARP = {
     "Welche Programmiersprachen werden von .NET unterstützt?": {
         "a": "Java, Swift, Ruby, PHP",
         "b": "Visual Basic, C#, C++, JScript, Pascal, Python",
@@ -630,7 +630,7 @@ questionsCSHARP = {
         "correct": "b"
     },
 }
-questionsAWL = {
+questions2ADAC_AWL = {
     "Welche fünf Elemente sind für die Gültigkeit eines Vertrages notwendig?": {
         "a": "Unterschrift, Notar, Zeugen, Freiwilligkeit, Möglichkeit",
         "b": "Willenserklärung, Geschäftsfähigkeit, Freiwilligkeit, Erlaubtheit, Möglichkeit",
@@ -744,6 +744,50 @@ questionsAWL = {
         "b": "Kleinbetrag-Rechnung bis 500 Euro, Großbetrag-Rechnung über 500 Euro",
         "c": "Kleinbetrag-Rechnung bis 1000 Euro, Großbetrag-Rechnung über 1000 Euro",
         "correct": "a"
+    }
+}
+questions3ADAC_DTSM = {
+    "Was ist ein Ziel der Kostenrechnung?": {
+        "a": "Mitarbeiter einstellen",
+        "b": "Verkaufspreise berechnen",
+        "c": "Einkommenssteuer berechnen",
+        "correct": "b"
+    },
+    "Was versteht man unter Einzelkosten?": {
+        "a": "Kosten für Werbung und Verwaltung",
+        "b": "Kosten, die sich auf alle Produkte verteilen",
+        "c": "Kosten, die einem Produkt direkt zugeordnet werden können",
+        "correct": "c"
+    },
+    "Welches Werkzeug wird in der Kostenartenrechnung verwendet?": {
+        "a": "Zuschlagskalkulation",
+        "b": "Betriebsüberleitungsbogen (BÜB)",
+        "c": "Betriebs-Abrechnungsbogen (BAB)",
+        "correct": "b"
+    },
+    "Wofür wird die Zuschlagskalkulation verwendet?": {
+        "a": "Zur Überprüfung von Gehältern",
+        "b": "Zur Aufteilung der Kosten auf Kostenstellen",
+        "c": "Zur Berechnung von Selbstkosten und Verkaufspreisen",
+        "correct": "c"
+    },
+    "Welche Kostenarten gibt es in der Kostenrechnung?": {
+        "a": "Einzelkosten und Gemeinkosten",
+        "b": "Personalkosten und Verwaltungskosten",
+        "c": "Materialkosten und Lagerkosten",
+        "correct": "a"
+    },
+    "Was wird in der Kostenstellenrechnung ermittelt?": {
+        "a": "Die direkten Kosten eines Produkts",
+        "b": "Die Verteilung der Kosten auf verschiedene Kostenstellen",
+        "c": "Der Gewinn eines Unternehmens",
+        "correct": "b"
+    },
+    "Welche Formvorschrift gilt für die Buchführung?": {
+        "a": "Keine Buchung ohne Beleg",
+        "b": "7 Jahre Aufbewahrungspflicht für Belege",
+        "c": "Beides ist korrekt",
+        "correct": "c"
     }
 }
 

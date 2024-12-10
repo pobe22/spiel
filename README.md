@@ -44,13 +44,13 @@ Mehrspieler Quiz ist ein unterhaltsames und interaktives Quiz-Spiel, das es Spie
    Erstelle eine Datei `questions.py` und definiere deine Fragendatensätze dort. Zum Beispiel:
 
    ```python
-   questionsDTSM = {
+   questions2ADAC_DTSM = {
        "Was ist die Hauptstadt von Deutschland?": {"a": "Berlin", "b": "München", "c": "Hamburg", "correct": "a"},
        "Welches Jahr war der Beginn des Zweiten Weltkriegs?": {"a": "1939", "b": "1945", "c": "1914", "correct": "a"},
        # Weitere Fragen...
    }
 
-   questionsINF = {
+   questions2ADAC_INF = {
        "Was bedeutet HTML?": {"a": "HyperText Markup Language", "b": "HyperText Makeup Language", "c": "Hyperlink and Text Markup Language", "correct": "a"},
        "Wer hat das World Wide Web erfunden?": {"a": "Bill Gates", "b": "Tim Berners-Lee", "c": "Steve Jobs", "correct": "b"},
        # Weitere Fragen...

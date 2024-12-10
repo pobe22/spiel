@@ -1,9 +1,9 @@
 import tkinter as tk
 from tkinter import messagebox
-from questions import questionsDTSM, questionsINF
+from questions import questions2ADAC_DTSM, questions2ADAC_INF
 import random
 
-questions = {"DTSM": questionsDTSM, "INF": questionsINF}
+questions = {"DTSM": questions2ADAC_DTSM, "INF": questions2ADAC_INF}
 
 class QuizApp:
     def __init__(self, root):
