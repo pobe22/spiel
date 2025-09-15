@@ -1,0 +1,26 @@
+import unittest
+from utils.networking import Server, Client
+import threading
+import time
+
+class TestNetworking(unittest.TestCase):
+    def test_send_receive(self):
+        received_data = []
+
+        def on_receive(data):
+            received_data.append(data)
+
+        server = Server(5000)
+        server.start(on_receive)
+        time.sleep(0.5)  # kurz warten, dass Server startet
+
+        client = Client('localhost', 5000)
+        client.start(on_receive)
+        time.sleep(0.5)  # kurz warten, dass Client verbindet
+
+        client.send("Test")
+        time.sleep(0.5)
+        self.assertIn("Test", received_data)
+
+if __name__ == "__main__":
+    unittest.main()
