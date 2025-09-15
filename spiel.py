@@ -1,5 +1,5 @@
 import random
-from questions import questions2ADAC_DTSM, questions2ADAC_INF, questions2ADAC_CSHARP, questions2ADAC_AWL, questions3ADAC_DTSM
+from questions import questions2ADAC_DTSM, questions2ADAC_INF, questions2ADAC_CSHARP, questions2ADAC_AWL, questions3ADAC_DTSM, questions3ADAC_INF
 
 questions_2ADAC = {
     "DTSM": questions2ADAC_DTSM,
@@ -10,6 +10,7 @@ questions_2ADAC = {
 
 questions_3ADAC = {
     "DTSM": questions3ADAC_DTSM,
+    "INF": questions3ADAC_INF,
 }
 
 class_question_sets = {
