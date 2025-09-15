@@ -114,3 +114,47 @@ questions2ADAC_AWL = {
         "correct": "a"
     }
 }
+questions3ADAC_AWL = {
+    "Was ist ein Ziel der Kostenrechnung?": {
+        "a": "Mitarbeiter einstellen",
+        "b": "Verkaufspreise berechnen",
+        "c": "Einkommenssteuer berechnen",
+        "correct": "b"
+    },
+    "Was versteht man unter Einzelkosten?": {
+        "a": "Kosten für Werbung und Verwaltung",
+        "b": "Kosten, die sich auf alle Produkte verteilen",
+        "c": "Kosten, die einem Produkt direkt zugeordnet werden können",
+        "correct": "c"
+    },
+    "Welches Werkzeug wird in der Kostenartenrechnung verwendet?": {
+        "a": "Zuschlagskalkulation",
+        "b": "Betriebsüberleitungsbogen (BÜB)",
+        "c": "Betriebs-Abrechnungsbogen (BAB)",
+        "correct": "b"
+    },
+    "Wofür wird die Zuschlagskalkulation verwendet?": {
+        "a": "Zur Überprüfung von Gehältern",
+        "b": "Zur Aufteilung der Kosten auf Kostenstellen",
+        "c": "Zur Berechnung von Selbstkosten und Verkaufspreisen",
+        "correct": "c"
+    },
+    "Welche Kostenarten gibt es in der Kostenrechnung?": {
+        "a": "Einzelkosten und Gemeinkosten",
+        "b": "Personalkosten und Verwaltungskosten",
+        "c": "Materialkosten und Lagerkosten",
+        "correct": "a"
+    },
+    "Was wird in der Kostenstellenrechnung ermittelt?": {
+        "a": "Die direkten Kosten eines Produkts",
+        "b": "Die Verteilung der Kosten auf verschiedene Kostenstellen",
+        "c": "Der Gewinn eines Unternehmens",
+        "correct": "b"
+    },
+    "Welche Formvorschrift gilt für die Buchführung?": {
+        "a": "Keine Buchung ohne Beleg",
+        "b": "7 Jahre Aufbewahrungspflicht für Belege",
+        "c": "Beides ist korrekt",
+        "correct": "c"
+    }
+}

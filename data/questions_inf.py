@@ -341,5 +341,299 @@ questions3ADAC_INF = {
         "b": "Wenn die Relation keine redundanten Daten enthält.",
         "c": "Wenn jedes Attribut einer Tabelle atomar ist und keine transitiven Abhängigkeiten vorhanden sind.",
         "correct": "a"
+    },
+    "Was versteht man unter einer Tabelle?": {
+        "a": "Eine Tabelle ist nur eine Sammlung von Zahlen ohne Zusammenhang",
+        "b": "Eine Tabelle enthält nur Textinformationen ohne Spaltenstruktur",
+        "c": "Eine Tabelle besteht aus Zeilen und Spalten, wobei die Zeilen einen Datensatz angeben und die Spalten die Attribute definieren",
+        "correct": "c"
+    },
+    "Aus was bestehen Tabellen und was bewirken diese Bestandteile?": {
+        "a": "Tabellen bestehen nur aus Datensätzen ohne Felder",
+        "b": "Tabellen bestehen aus Formeln, die automatisch Werte berechnen",
+        "c": "Tabellen bestehen aus Feldern/Spalten. Zusammengehörige Daten werden in eine Zeile geschrieben, sie bilden einen Datensatz",
+        "correct": "c"
+    },
+    "Führen Sie ein syntaktisches Beispiel für die Erstellung einer Tabelle für Produkte an. (mitsamt Feldern)": {
+        "a": "CREATE TABLE produkte (produktname CHAR, produktid FLOAT);",
+        "b": "INSERT INTO produkte VALUES (1, 'Tisch', 'Holztisch');",
+        "c": "CREATE TABLE produkte ( id INT NOT NULL PRIMARY KEY, name VARCHAR(100), beschreibung VARCHAR(500));",
+        "correct": "c"
+    },
+    "Beschreiben Sie den Wert NULL und den Umgang damit": {
+        "a": "NULL ist gleich 0 und kann in Berechnungen verwendet werden",
+        "b": "NULL ist ein Textwert, der leer angezeigt wird",
+        "c": "NULL beschreibt eine standardmäßige Leerstelle eines Datenfelds, der Datensatz darf keinen Wert enthalten",
+        "correct": "c"
+    },
+    "Was bewirkt folgende Angabe bei der Erstellung einer Tabelle: “id INTEGER NOT NULL”?": {
+        "a": "Die Spalte id wird automatisch als Text gespeichert",
+        "b": "Die Spalte id wird als INTEGER erstellt und ein Wert muss eingegeben werden",
+        "c": "Die Spalte id darf keine Werte enthalten",
+        "correct": "b"
+    },
+    "Welche Datentypen für ganzzahlige Werte kennen Sie? Wie sind die Wertebereiche dafür?": {
+        "a": "CHAR, VARCHAR, TEXT",
+        "b": "FLOAT, DOUBLE, NUMERIC",
+        "c": "SMALLINT -32768 bis +32767, INTEGER -2147483648 bis +2147483647, BIGINT -9223372036854775808 bis +9223372036854775808",
+        "correct": "c"
+    },
+    "Für was eignen sich numerische Datentypen für Festkommazahlen?": {
+        "a": "Für Textinformationen",
+        "b": "Nur für Datumsangaben",
+        "c": "Für IDs, für Werte die keine feinere Unterteilung brauchen",
+        "correct": "c"
+    },
+    "Welche Datentypen können ge-castet werden? Führen Sie Beispiele dafür an": {
+        "a": "CHAR kann niemals zu NUMERIC konvertiert werden",
+        "b": "NUMERIC kann nur in TEXT umgewandelt werden",
+        "c": "Implizit: SMALLINT -> INTEGER; Explizit: CAST(NUMERIC AS CHAR), CAST(CHAR AS NUMERIC)",
+        "correct": "c"
+    },
+    "Für was verwendet man Constraints bzw. was sind Constraints?": {
+        "a": "Constraints sind nur Kommentare in Tabellen",
+        "b": "Constraints löschen automatisch doppelte Werte",
+        "c": "Constraints definieren Bedingungen für Daten; wenn nicht erfüllt, wird eine Fehlermeldung erzeugt",
+        "correct": "c"
+    },
+    "Was war das Ziel für die Entwicklung von SQL?": {
+        "a": "SQL wurde entwickelt, um komplexe mathematische Berechnungen durchzuführen",
+        "b": "SQL wurde entwickelt, um auch für Nicht-Programmierer eine einfache Sprache zur Abfrage von Datenbanken bereitzustellen",
+        "c": "SQL wurde entwickelt, um nur Textdateien zu verarbeiten",
+        "correct": "b"
+    },
+    "Erklären Sie mind. 3 Anwendungsfälle für SQL": {
+        "a": "Nur um Tabellen zu drucken",
+        "b": "Nur um Benutzerrechte zu verwalten",
+        "c": "Datenbankdefinition, Daten abfragen und filtern, Daten manipulieren",
+        "correct": "c"
+    },
+    "Für was wird DDL (Data Definition Language) verwendet?": {
+        "a": "Abfragen von Daten",
+        "b": "Manipulation von Datensätzen",
+        "c": "Erstellen von Datenbanken, Tabellen und Indizes",
+        "correct": "c"
+    },
+    "Für was wird DQL verwendet?": {
+        "a": "Erstellen von Tabellen",
+        "b": "Manipulation von Datensätzen",
+        "c": "Abfragen von Daten",
+        "correct": "c"
+    },
+    "Für was wird DML (Data Manipulation Language) verwendet?": {
+        "a": "Erstellen von Tabellen",
+        "b": "Abfragen von Daten",
+        "c": "Anlegen, Ändern und Löschen von Datensätzen",
+        "correct": "c"
+    },
+    "Für was wird DCL (Data Control Language) verwendet?": {
+        "a": "Nur zum Abfragen von Daten",
+        "b": "Nur zur Definition von Tabellen",
+        "c": "Anlegen von Benutzern und Vergabe von Zugriffsrechten",
+        "correct": "c"
+    },
+    "Benennen Sie mind. 3 SQL-Befehle im Umgang mit Datenbanken": {
+        "a": "INSERT INTO, UPDATE, DELETE",
+        "b": "CAST, CONVERT, ALTER",
+        "c": "CREATE DATABASE [IF NOT EXISTS] datenbankname; SHOW DATABASES; USE datenbankname; DROP DATABASE [IF EXISTS] datenbankname",
+        "correct": "c"
+    },
+    "Was ist DOM?": {
+        "a": "DOM steht für Document Object Model. Es ist eine standardisierte Objektschnittstelle, die mit JavaScript genutzt werden kann",
+        "b": "DOM ist ein Datenbankmodell für Dokumente",
+        "c": "DOM beschreibt das Design von CSS-Dateien",
+        "correct": "a"
+    },
+    "Was ist das hierarchiehöchste Objekt im DOM? Nennen Sie drei Unterobjekte": {
+        "a": "Das höchste Objekt ist document; Unterobjekte sind head, body, title",
+        "b": "Das höchste Objekt ist window; Unterobjekte sind frames, document, location",
+        "c": "Das höchste Objekt ist HTML; Unterobjekte sind head, body, footer",
+        "correct": "b"
+    },
+    "Wie wird die Struktur eines Dokuments im Browser dargestellt?": {
+        "a": "Als Liste von CSS-Klassen",
+        "b": "Als Baumstruktur, wobei Elemente als Knoten (nodes) im Speicher abgebildet werden",
+        "c": "Als reine Textdatei ohne Struktur",
+        "correct": "b"
+    },
+    "Nennen Sie drei wichtige Knotentypen bei Webseiten": {
+        "a": "Dokumentknoten, Elementknoten, Attributknoten",
+        "b": "HTML-Knoten, CSS-Knoten, JS-Knoten",
+        "c": "Window-Knoten, Frame-Knoten, Script-Knoten",
+        "correct": "a"
+    },
+    "Was bewirkt die DOM-Methode getElementById()?": {
+        "a": "Sie gibt ein Array aller Elemente mit einem bestimmten Tag-Namen zurück",
+        "b": "Sie selektiert ein HTML-Element anhand seines id-Attributs und liefert den entsprechenden Knoten",
+        "c": "Sie ändert den Textinhalt eines Elements",
+        "correct": "b"
+    },
+    "Was bewirkt die DOM-Methode getElementsByTagName()?": {
+        "a": "Sie liefert einen Array von Knoten, die den angegebenen Tag-Namen besitzen",
+        "b": "Sie selektiert ein einzelnes Element anhand der id",
+        "c": "Sie löscht alle Elemente eines bestimmten Typs",
+        "correct": "a"
+    },
+    "Welche drei wesentlichen Kategorien zum Zugriff auf Elemente einer Webseite gibt es?": {
+        "a": "Zugriff auf Textinhalte, Zugriff auf Werte von Formularfeldern, Zugriff auf klassische HTML-Attribute",
+        "b": "Zugriff auf CSS-Stile, Zugriff auf Browser-Plugins, Zugriff auf Cookies",
+        "c": "Zugriff auf Dateien, Zugriff auf Netzwerkdaten, Zugriff auf lokale Speicherung",
+        "correct": "a"
+    },
+    "Wie kann auf Formularinhalte zugegriffen werden?": {
+        "a": "Über die CSS-Eigenschaft style",
+        "b": "Über die value-Eigenschaft des entsprechenden Elements",
+        "c": "Über die id des Formulars ohne weitere Eigenschaften",
+        "correct": "b"
+    },
+    "Für was verwendet man die SELECT-Anweisung?": {
+        "a": "Um alle Tabellen einer Datenbank zu löschen",
+        "b": "Um aus einer oder mehreren Tabellen genau die Attribute auszuwählen, die für die aktuelle Abfrage gebraucht werden",
+        "c": "Um Tabellen zu erstellen",
+        "correct": "b"
+    },
+    "Wie kann man die Ergebnismenge einer SELECT-Anweisung eingrenzen?": {
+        "a": "Mit dem Keyword WHERE gefolgt von einem booleschen Ausdruck",
+        "b": "Mit der Funktion CAST",
+        "c": "Mit dem Befehl INSERT INTO",
+        "correct": "a"
+    },
+    "Welche weiteren optionalen Klauseln wie die WHERE-Klausel kennen Sie? Beschreiben Sie diese kurz": {
+        "a": "GROUP BY (Wert), LIMIT (Wert), ORDER BY (Wert) [ASC, DESC]",
+        "b": "INSERT, UPDATE, DELETE",
+        "c": "CREATE, DROP, ALTER",
+        "correct": "a"
+    },
+    "Wie kann man eine Spaltenüberschrift einer Ergebnismenge ändern? (mit Beispiel)": {
+        "a": "Mit dem Keyword AS im SELECT-Statement, z. B.: SELECT vname AS Vorname FROM mitarbeiter",
+        "b": "Mit der Funktion SUM()",
+        "c": "Mit der ORDER BY-Klausel",
+        "correct": "a"
+    },
+    "Wie kann man im Abfrageergebnis doppelte Datensätze vermeiden?": {
+        "a": "Mit der Verwendung von GROUP BY (Wert), um gleiche Werte zu gruppieren und nur einmal anzuzeigen",
+        "b": "Mit der WHERE-Klausel",
+        "c": "Mit der LIMIT-Klausel",
+        "correct": "a"
+    },
+    "Was ist eine Relation bzw. Was beschreibt sie? Führen Sie drei Eigenschaften an": {
+        "a": "Eine Menge von Tupeln (Datensätzen) in der Form einer Tabelle; Eigenschaften: Eindeutiger Name, mehrere Attribute, Primärschlüssel",
+        "b": "Eine Liste von Objekten ohne feste Struktur",
+        "c": "Eine Sammlung von Werten ohne Beziehung zueinander",
+        "correct": "a"
+    },
+    "Was versteht man unter funktionaler Abhängigkeit?": {
+        "a": "Alle Attribute sind unabhängig voneinander",
+        "b": "Für einen bestimmten Wert X gibt es immer einen individuellen Wert Y, der sich nicht ändert",
+        "c": "Ein Attribut kann beliebige Werte annehmen, unabhängig von anderen",
+        "correct": "b"
+    },
+    "Was versteht man unter transitiver Abhängigkeit?": {
+        "a": "Attribute sind in einer Kette zwischen anderen Attributen voneinander abhängig; Beispiel: A von B, B von C → A ist transitiv von C",
+        "b": "Alle Attribute hängen nur direkt vom Primärschlüssel ab",
+        "c": "Attribute haben keine Abhängigkeiten",
+        "correct": "a"
+    },
+    "Was sind die Ziele der Normalisierung? Mindestens 3": {
+        "a": "Verhindert Datenredundanz, verhindert Dateninkonsistenz, sorgt für Sicherheit beim Einfügen/Löschen/Ändern von Datensätzen",
+        "b": "Erhöht die Datenredundanz und erlaubt Duplikate",
+        "c": "Vereinfachung der Syntax von SQL-Befehlen",
+        "correct": "a"
+    },
+    "Beschreiben Sie die 1:1 Beziehung und führen Sie ein Beispiel an": {
+        "a": "Ein Tupel aus einer Relation ist genau einem Tupel aus einer anderen Relation zugeordnet; Beispiel: Postleitzahl und Ort",
+        "b": "Ein Tupel kann mehreren Tupeln einer anderen Relation zugeordnet sein",
+        "c": "Jede Relation kann beliebig viele Tupel enthalten, ohne Beziehung",
+        "correct": "a"
+    },
+    "Beschreiben Sie die 1:n Beziehung": {
+        "a": "Jede Entität einer Entitätsmenge ist genau einem Tupel einer anderen Entität zugeordnet",
+        "b": "Jede Entität einer Entitätsmenge kann mehreren Entitäten einer anderen Entitätsmenge zugeordnet sein; Beispiel: Person und Immobilien",
+        "c": "Es besteht keine Beziehung zwischen Entitäten",
+        "correct": "b"
+    },
+    "Was ist ein Primärschlüssel?": {
+        "a": "Ein eindeutiger Identifikator einer Entität, Wert kommt nur einmal vor",
+        "b": "Ein Fremdschlüssel in einer anderen Tabelle",
+        "c": "Ein Standardwert für leere Felder",
+        "correct": "a"
+    },
+    "Was ist ein Fremdschlüssel?": {
+        "a": "Ein Attribut ohne Bezug zu anderen Tabellen",
+        "b": "Der eindeutige Identifikator einer Fremd-Relation, der in der aktuellen Relation eingebunden wird",
+        "c": "Ein zufälliger Wert zur Identifikation von Datensätzen",
+        "correct": "b"
+    },
+    "Was versteht man unter NULL-Werten oder leeren Einträgen?": {
+        "a": "NULL-Werte zeigen die Absenz von Werten; leere Einträge enthalten einen Standardwert abhängig vom Datentyp",
+        "b": "NULL-Werte sind gleich 0; leere Einträge sind leerer Text",
+        "c": "NULL-Werte und leere Einträge sind immer gleichwertig und werden automatisch entfernt",
+        "correct": "a"
+    },
+    "Was ist eine Lösch-Anomalie?": {
+        "a": "Bei der Löschung eines Datensatzes werden abhängige Datensätze mitgelöscht, was zum Datenverlust führen kann",
+        "b": "Beim Löschen eines Datensatzes wird automatisch ein Backup erstellt",
+        "c": "Lösch-Anomalien verhindern Datenverlust",
+        "correct": "a"
+    },
+    "Wann befindet sich eine Relation in der 1. Normalform?": {
+        "a": "Wenn jedes Attribut atomar ist und pro Tupel nur ein Eintrag zulässig ist",
+        "b": "Wenn jedes Attribut mehrere Werte gleichzeitig enthalten kann",
+        "c": "Wenn alle Attribute unabhängig voneinander sind",
+        "correct": "a"
+    },
+    "Wann befindet sich eine Relation in der 2. Normalform?": {
+        "a": "Wenn die 1. Normalform erfüllt ist und jedes Nicht-Schlüsselfeld vom Primärschlüssel abhängig ist",
+        "b": "Wenn alle Attribute mehrfach vorkommen dürfen",
+        "c": "Wenn nur die Primärschlüssel-Attribute existieren",
+        "correct": "a"
+    },
+    "Was ist ein Primärschlüssel und welche Rolle spielt er in einer Tabelle?": {
+        "a": "Ein Primärschlüssel ist ein Attribut, das jeden Datensatz eindeutig macht; kann auch aus mehreren Attributen bestehen",
+        "b": "Ein Primärschlüssel ist ein Textfeld ohne besondere Bedeutung",
+        "c": "Ein Primärschlüssel ist ein Wert, der automatisch für alle Datensätze generiert wird",
+        "correct": "a"
+    },
+    "Welche Vorteile bietet ein Index in einer Datenbank?": {
+        "a": "Er verringert die Größe der Datenbank",
+        "b": "Durch einen Index kann die Performance beim Abfragen von Daten verbessert werden",
+        "c": "Ein Index erstellt automatisch Primärschlüssel",
+        "correct": "b"
+    },
+    "Was ist ein Fremdschlüssel und wie unterstützt er die referenzielle Integrität?": {
+        "a": "Er verhindert alle Löschungen in der Datenbank",
+        "b": "Ein Fremdschlüssel stellt eine Beziehung zu einem Schlüsselfeld einer anderen Relation her und sorgt für referenzielle Integrität",
+        "c": "Ein Fremdschlüssel ist ein Standardwert für leere Felder",
+        "correct": "b"
+    },
+    "Wie kann ein Sekundärschlüssel definiert werden, und worin unterscheidet er sich von einem Primärschlüssel?": {
+        "a": "Sekundärschlüssel werden automatisch erstellt",
+        "b": "Ein Sekundärschlüssel wird mit UNIQUE definiert und es können mehrere Schlüssel dieser Art existieren",
+        "c": "Sekundärschlüssel sind immer Primärschlüssel",
+        "correct": "b"
+    },
+    "Wie erstellt man einen zusammengesetzten Primärschlüssel?": {
+        "a": "PRIMARY KEY (Spalte1, Spalte2)",
+        "b": "Mit der Funktion COMBINE(Spalte1, Spalte2)",
+        "c": "Mit der UNIQUE-Klausel",
+        "correct": "a"
+    },
+    "Welche Nachteile können Indizes mit sich bringen?": {
+        "a": "Indizes verringern automatisch die Performance",
+        "b": "Zu viele Indizes können die Performance bei INSERT/UPDATE/DELETE verschlechtern und brauchen zusätzlichen Speicherplatz",
+        "c": "Indizes verhindern das Einfügen neuer Daten",
+        "correct": "b"
+    },
+    "Was sind typische Einsatzszenarien für Fremdschlüssel in einer Datenbank?": {
+        "a": "Nur zur Optimierung von Abfragen",
+        "b": "Fremdschlüssel dienen zur Abbildung von Beziehungen und zur Sicherstellung der referenziellen Integrität",
+        "c": "Fremdschlüssel werden nur für Textfelder verwendet",
+        "correct": "b"
+    },
+    "Welche Best Practices gibt es beim Erstellen von Indizes?": {
+        "a": "Indizes nur für Tabellen mit sehr wenigen Daten erstellen",
+        "b": "Indizes nur für häufig verwendete Abfragen erstellen und für Tabellen mit großen Datenmengen",
+        "c": "Indizes automatisch für alle Tabellen erstellen",
+        "correct": "b"
     }
 }

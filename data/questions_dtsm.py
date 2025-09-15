@@ -248,47 +248,126 @@ questions2ADAC_DTSM= {
         "correct": "b"
     },
 }
-questions3ADAC_DTSM = {
-    "Was ist ein Ziel der Kostenrechnung?": {
-        "a": "Mitarbeiter einstellen",
-        "b": "Verkaufspreise berechnen",
-        "c": "Einkommenssteuer berechnen",
-        "correct": "b"
-    },
-    "Was versteht man unter Einzelkosten?": {
-        "a": "Kosten für Werbung und Verwaltung",
-        "b": "Kosten, die sich auf alle Produkte verteilen",
-        "c": "Kosten, die einem Produkt direkt zugeordnet werden können",
+questions3ADAC_DTSM= {
+    "Womit beschäftigt sich die Wissenschaft der Ergonomie?": {
+        "a": "Mit der Gestaltung von Maschinen für maximale Produktivität",
+        "b": "Mit den physikalischen Eigenschaften von Materialien",
+        "c": "Mit der Schnittstelle zwischen Mensch und Maschine",
         "correct": "c"
     },
-    "Welches Werkzeug wird in der Kostenartenrechnung verwendet?": {
-        "a": "Zuschlagskalkulation",
-        "b": "Betriebsüberleitungsbogen (BÜB)",
-        "c": "Betriebs-Abrechnungsbogen (BAB)",
-        "correct": "b"
-    },
-    "Wofür wird die Zuschlagskalkulation verwendet?": {
-        "a": "Zur Überprüfung von Gehältern",
-        "b": "Zur Aufteilung der Kosten auf Kostenstellen",
-        "c": "Zur Berechnung von Selbstkosten und Verkaufspreisen",
+    "Welche Beschwerden können durch Bildschirmarbeit auftreten?": {
+        "a": "Hautausschlag und Allergien",
+        "b": "Muskelkrämpfe in den Beinen",
+        "c": "Augenbelastung, Nackenschmerzen, Rückenschmerzen, Kopfschmerzen, Ermüdung",
         "correct": "c"
     },
-    "Welche Kostenarten gibt es in der Kostenrechnung?": {
-        "a": "Einzelkosten und Gemeinkosten",
-        "b": "Personalkosten und Verwaltungskosten",
-        "c": "Materialkosten und Lagerkosten",
+    "Welche Ursachen können zu Beschwerden bei Bildschirmarbeit führen?": {
+        "a": "Zu viel Bewegung und körperliche Aktivität",
+        "b": "Zu wenige Pausen beim Stehen",
+        "c": "Falsche Monitorhöhe, schlechte Sitzwinkel, lange Bildschirmarbeit am Stück",
+        "correct": "c"
+    },
+    "Warum ist die Arbeit mit einem Laptop ergonomisch problematisch und wie kann man dies ausgleichen?": {
+        "a": "Laptops sind zu schwer, man kann nur im Stehen arbeiten",
+        "b": "Laptops erzeugen elektromagnetische Strahlung",
+        "c": "Laptops fördern eine schlechte Sitzhaltung; Lösung: externe Maus und Tastatur, Laptopständer",
+        "correct": "c"
+    },
+    "Was macht einen Drehstuhl ergonomisch?": {
+        "a": "Hartes Sitzpolster und starre Rückenlehne",
+        "b": "Nur verstellbare Höhe",
+        "c": "Verstellbare Höhe, Rückenlehne, Sitzneigung, 5 Beine",
+        "correct": "c"
+    },
+    "Wie sollte ein ergonomisch gestalteter Arbeitsplatz aussehen (Sitzhöhe, Monitor, Tastatur/Maus)?": {
+        "a": "Sitzhöhe: hoch; Monitor: über Kopf; Tastatur: zu tief",
+        "b": "Sitzhöhe: niedrig; Monitor: direkt auf Tisch; Tastatur: diagonal",
+        "c": "Sitzhöhe: Füße flach auf Boden, Knie ~90°; Monitor: Oberkante auf Augenhöhe, Abstand 50-70 cm; Tastatur/Maus: Ellenbogenlinie, Unterarme parallel zum Boden",
+        "correct": "c"
+    },
+    "Was macht eine Tastatur und Maus ergonomisch?": {
+        "a": "Tastatur: feste Position, Maus: kabelgebunden",
+        "b": "Tastatur: nur Standardlayout, Maus: groß",
+        "c": "Tastatur: verstellbarer Winkel, Handgelenksauflagen; Maus: kabellos",
+        "correct": "c"
+    },
+    "Welche Probleme können Kabel am Arbeitsplatz verursachen?": {
+        "a": "Sie verringern die Rechenleistung",
+        "b": "Sie stören die Netzwerkverbindung",
+        "c": "Stolperfalle, Zwangshaltung, elektrische Gefahr",
+        "correct": "c"
+    },
+    "Welche Emissionen und Richtlinien am Arbeitsplatz sind wichtig?": {
+        "a": "Beleuchtung: 100 Lux, Temperatur 30 °C, Luftfeuchtigkeit 30%",
+        "b": "Blendung und Spiegelungen sind erlaubt, keine Vorgaben",
+        "c": "Beleuchtung ≥500 Lux, Blendung/Reflexion vermeiden; Raumtemperatur 18-25 °C; Luftfeuchtigkeit 45-65 %",
+        "correct": "c"
+    },
+    "Welche gebräuchlichen Grafikschnittstellen zu Monitoren kennen Sie?": {
+        "a": "VGA, DVI, HDMI, DisplayPort, Thunderbolt, TV-Out",
+        "b": "USB, FireWire, SATA",
+        "c": "Ethernet, RJ45, Coax",
         "correct": "a"
     },
-    "Was wird in der Kostenstellenrechnung ermittelt?": {
-        "a": "Die direkten Kosten eines Produkts",
-        "b": "Die Verteilung der Kosten auf verschiedene Kostenstellen",
-        "c": "Der Gewinn eines Unternehmens",
+    "Welche analogen Signale liegen an einem VGA-Stecker an?": {
+        "a": "Nur H/V-Sync-Signal",
+        "b": "Nur RGB-Signal",
+        "c": "RGB-Signal, H/V-Sync-Signal",
+        "correct": "c"
+    },
+    "Was unterscheidet Single-Link von Dual-Link DVI-Verfahren?": {
+        "a": "Single-Link hat 3 Datenkanäle, max. Auflösung etwas über FullHD; Dual-Link hat 6 Datenkanäle, max. Auflösung unter 4K",
+        "b": "Single-Link hat 6 Datenkanäle, Dual-Link 3 Datenkanäle",
+        "c": "Es gibt keinen Unterschied",
+        "correct": "a"
+    },
+    "An welchen DVI-Buchsen können analoge Signale übertragen werden?": {
+        "a": "DVI-A und DVI-I",
+        "b": "DVI-D",
+        "c": "Alle DVI-Typen",
+        "correct": "a"
+    },
+    "Worin unterscheidet sich HDMI von DVI?": {
+        "a": "HDMI überträgt nur Videosignale",
+        "b": "DVI-D überträgt nur digitale Signale und kein Audio",
+        "c": "DVI kann Audio und Video gleichzeitig übertragen",
         "correct": "b"
     },
-    "Welche Formvorschrift gilt für die Buchführung?": {
-        "a": "Keine Buchung ohne Beleg",
-        "b": "7 Jahre Aufbewahrungspflicht für Belege",
-        "c": "Beides ist korrekt",
-        "correct": "c"
+    "Was ist HDCP und welchen Zweck erfüllt es?": {
+        "a": "High Definition Copy Protection; verhindert die Übertragung auf unsichere Ausgabegeräte",
+        "b": "High Data Compression Protocol; reduziert Datenvolumen",
+        "c": "High Display Color Processing; verbessert die Farbdarstellung",
+        "correct": "a"
+    },
+    "Welche Arten von DisplayPort-Adaptern gibt es und wofür?": {
+        "a": "Passive Adapter (für DVI, HDMI), Active Adapter (für VGA, Dual-Link DVI)",
+        "b": "Nur Passive Adapter für alle Signale",
+        "c": "Nur Active Adapter für alle Signale",
+        "correct": "a"
+    },
+    "Wie kann man mehrere DP-Monitore an einem PC anschließen?": {
+        "a": "Über parallele Verkabelung",
+        "b": "Über Daisy-Chain",
+        "c": "Über HDMI-Splitter",
+        "correct": "b"
+    },
+    "Welche Techniken vereint Thunderbolt?": {
+        "a": "PCI-Express und DisplayPort Tunneling, Stromversorgung, aktive Kabel",
+        "b": "Nur USB 3.0 Tunneling",
+        "c": "Nur Stromversorgung über Kupferkabel",
+        "correct": "a"
+    },
+    "Welche Thunderbolt-Steckerformen und Standards gibt es?": {
+        "a": "Mini-DisplayPort (TB1/2), USB Typ-C (TB3/4)",
+        "b": "Nur USB Typ-A",
+        "c": "Nur HDMI-Stecker",
+        "correct": "a"
+    },
+    "Wie können Monitor-Schnittstellen anhand von Bildern/Skizzen erkannt werden?": {
+        "a": "Durch die Anzahl der Pins und Form der Buchse",
+        "b": "Durch die Farbe des Kabels",
+        "c": "Durch die Länge des Kabels",
+        "correct": "a"
     }
+
 }
