@@ -637,3 +637,392 @@ questions3ADAC_INF = {
         "correct": "b"
     }
 }
+questions4ADAC_INF = {
+    "Nenne 3 Beispiele für die Verwendung von den Devtools eines Browsers:": {
+        "a": "Nur JavaScript-Code debuggen",
+        "b": "HTML-Elemente einsehen/verändern, CSS-Elemente einsehen/verändern, Geräte wie Smartphones/Tablets simulieren",
+        "c": "Nur Netzwerkpakete analysieren",
+        "correct": "b"
+    },
+    "Was versteht man unter clientseitiger Programmierung?": {
+        "a": "Skripte werden nur auf dem Server ausgeführt",
+        "b": "Skripte werden direkt vom Benutzer im Browser ausgeführt, nicht auf dem Server",
+        "c": "Skripte laufen ausschließlich in der Cloud",
+        "correct": "b"
+    },
+    "Was ist der Unterschied zwischen einer dynamischen und einer statischen Webseite?": {
+        "a": "Eine dynamische Webseite kann Inhalte ändern, eine statische hat feste Inhalte",
+        "b": "Eine dynamische Webseite lädt nur Text, eine statische Bilder",
+        "c": "Eine statische Webseite wird nur von mobilen Geräten angezeigt",
+        "correct": "a"
+    },
+    "Zwischen welchen Webprogrammierungen unterscheidet man?": {
+        "a": "Serverseitige Webprogrammierung: nur für Datenbanken; Clientseitige: nur für Layout",
+        "b": "Serverseitige Webprogrammierung: dynamische Inhalte auf Server; Clientseitige Webprogrammierung: Skripte laufen im Browser",
+        "c": "Serverseitige Webprogrammierung: nur HTML; Clientseitige: nur CSS",
+        "correct": "b"
+    },
+    "Für was steht CSS und worum kümmert es sich?": {
+        "a": "Client Script System; programmiert die Logik der Seite",
+        "b": "Content Style Syntax; speichert Inhalte in der Datenbank",
+        "c": "Cascading Style Sheet; beschreibt Aussehen, Position und Sichtbarkeit von Elementen",
+        "correct": "c"
+    },
+    "Wozu verwendet man JavaScript?": {
+        "a": "Um HTML- und CSS-Eigenschaften dynamisch zu verändern und auf Ereignisse zu reagieren",
+        "b": "Um nur Bilder zu speichern",
+        "c": "Um statische Inhalte zu schreiben, die sich nie ändern",
+        "correct": "a"
+    },
+    "Auf was hat man mit der DOM-Schnittstelle Zugriff?": {
+        "a": "Nur auf CSS-Dateien",
+        "b": "Nur auf Netzwerkprotokolle",
+        "c": "HTML-Tags, Attribute, Inhalte von HTML-Seiten, XML-Dokumente, SVG-Grafiken",
+        "correct": "c"
+    },
+    "Welche Aufgabe hat ein Web-Browser?": {
+        "a": "Er kompiliert HTML-Dateien in ausführbare Programme",
+        "b": "Er stellt Webseiten nach W3C-Definition dar und interpretiert HTML, CSS, JavaScript",
+        "c": "Er speichert nur lokale Backups von Webseiten",
+        "correct": "b"
+    },
+    "Welche 3 Technologien sind in der clientseitigen Webentwicklung essentiell?": {
+        "a": "PHP, MySQL, Ruby",
+        "b": "C, C++, Java",
+        "c": "HTML, CSS, JavaScript",
+        "correct": "c"
+    },
+    "Welche Gemeinsamkeit teilen sich HTML, CSS und JavaScript?": {
+        "a": "Sie werden nur serverseitig ausgeführt",
+        "b": "Sie interagieren alle über das DOM (Document Object Model)",
+        "c": "Sie benötigen keine Browserunterstützung",
+        "correct": "b"
+    },
+    "Wer verwaltet die Standards für DOM?": {
+        "a": "ISO",
+        "b": "IEEE",
+        "c": "W3C (World Wide Web Consortium)",
+        "correct": "c"
+    },
+    "Was ist Bootstrap und welche Vorteile bietet es?": {
+        "a": "Bootstrap ist ein kostenpflichtiges Backend-Framework für Datenbanken",
+        "b": "Bootstrap ist ein kostenloses Frontend-Framework mit HTML, CSS und JS-Komponenten, das schnelle, responsive Websites ermöglicht",
+        "c": "Bootstrap ist ein Texteditor für HTML-Dateien",
+        "correct": "b"
+    },
+    "Erkläre das Grid-System von Bootstrap": {
+        "a": "Ein 12-spaltiges Raster, das Inhalte flexibel anordnet und sich an verschiedene Bildschirmgrößen anpasst",
+        "b": "Ein System zur Datenbankanbindung",
+        "c": "Ein Server-Framework zur Bereitstellung von Webseiten",
+        "correct": "a"
+    },
+    "Welche Arten von Komponenten bietet Bootstrap?": {
+        "a": "Nur Tabellen und Buttons",
+        "b": "Typografie, Formulare, Navigation, Tabellen, Buttons, Modalfenster",
+        "c": "Nur Backend-Services",
+        "correct": "b"
+    },
+    "Was sind Sass und Less im Zusammenhang mit Bootstrap?": {
+        "a": "CSS-Präprozessoren, die Variablen, Mixins und Nesting ermöglichen und Bootstrap effizienter machen",
+        "b": "Programmiersprachen für Datenbankabfragen",
+        "c": "Grafikdesign-Programme",
+        "correct": "a"
+    },
+    "Wie kann man Bootstrap anpassen?": {
+        "a": "Nur durch JavaScript-Plugins",
+        "b": "CSS-Overrides, Customizing von Variablen, JavaScript-Plugins",
+        "c": "Nur durch Serverkonfiguration",
+        "correct": "b"
+    },
+    "Was sind die Vor- und Nachteile von Bootstrap?": {
+        "a": "Schnellere Entwicklung, responsive Design, große Community; Nachteile: weniger Flexibilität, evtl. große CSS-Dateien",
+        "b": "Nur Nachteile: sehr kompliziert, keine Dokumentation",
+        "c": "Nur Vorteile: läuft automatisch ohne Anpassung",
+        "correct": "a"
+    },
+    "Wie integriert man Bootstrap in ein HTML-Dokument?": {
+        "a": "Bootstrap wird über einen CDN-Link im <head>-Bereich eingebunden",
+        "b": "Bootstrap muss auf einem Server installiert werden",
+        "c": "Bootstrap wird per FTP auf das Gerät heruntergeladen",
+        "correct": "a"
+    },
+    "Was ist der Unterschied zwischen einem Grid-System und einem Flexbox-Layout?": {
+        "a": "Grid-System für zweidimensionale Layouts, Flexbox für eindimensionale Layouts",
+        "b": "Flexbox ist für Server, Grid nur für Desktop",
+        "c": "Es gibt keinen Unterschied",
+        "correct": "a"
+    },
+    "Was ist ein responsive Design und wie wird es mit Bootstrap umgesetzt?": {
+        "a": "Ein Layout, das sich automatisch an die Bildschirmgröße anpasst, umgesetzt durch Grid-System und Media Queries",
+        "b": "Ein statisches Layout ohne Anpassung",
+        "c": "Ein Design nur für Smartphones",
+        "correct": "a"
+    },
+    "Welche anderen Frontend-Frameworks gibt es neben Bootstrap?": {
+        "a": "Foundation, Bulma, Materialize, Semantic UI",
+        "b": "MySQL, PostgreSQL, MongoDB",
+        "c": "Java, Python, C++",
+        "correct": "a"
+    },
+    "Was versteht man unter einem relationalen Datenbanksystem (RDBMS)?": {
+        "a": "Ein System, das Daten nur in Dateien speichert",
+        "b": "Ein Datenbanksystem, das Daten in Tabellen speichert, die in Beziehungen zueinander stehen und SQL verwendet",
+        "c": "Ein System zur Verwaltung von Textdokumenten",
+        "correct": "b"
+    },
+    "Was ist ein Primärschlüssel und welche Aufgabe hat er?": {
+        "a": "Ein Attribut oder eine Kombination von Attributen, die jede Zeile eindeutig identifiziert",
+        "b": "Ein zufälliges Feld ohne Bedeutung",
+        "c": "Ein Attribut, das auf andere Tabellen verweist",
+        "correct": "a"
+    },
+    "Was ist der Unterschied zwischen einem Primärschlüssel und einem Fremdschlüssel?": {
+        "a": "Primärschlüssel verweist auf andere Tabellen; Fremdschlüssel identifiziert die Zeilen",
+        "b": "Beide sind dasselbe",
+        "c": "Primärschlüssel identifiziert jede Zeile eindeutig; Fremdschlüssel verweist auf einen Primärschlüssel einer anderen Tabelle",
+        "correct": "c"
+    },
+    "Wofür verwendet man die SQL-Operation 'Join'?": {
+        "a": "Um nur einzelne Zeilen in einer Tabelle zu löschen",
+        "b": "Um Tabellen automatisch zu erstellen",
+        "c": "Um Daten aus zwei oder mehr Tabellen basierend auf einem gemeinsamen Attribut zu kombinieren",
+        "correct": "c"
+    },
+    "Was ist das Ziel der Normalisierung in einer Datenbank?": {
+        "a": "Redundanzen minimieren und Datenintegrität verbessern, indem Daten auf verschiedene Tabellen verteilt werden",
+        "b": "Datenbankgröße vergrößern",
+        "c": "Alle Daten in einer großen Tabelle speichern",
+        "correct": "a"
+    },
+    "Welche Eigenschaft garantiert die 2. Normalform (2NF)?": {
+        "a": "Alle Attribute hängen nur von einem Teil des Schlüssels ab",
+        "b": "Nicht-Schlüssel-Attribute hängen vollständig vom gesamten Primärschlüssel ab",
+        "c": "Keine Tabellenbeziehungen bestehen",
+        "correct": "b"
+    },
+    "Was ist eine transitive Abhängigkeit, und wie wird sie in der 3. Normalform (3NF) aufgelöst?": {
+        "a": "Ein Primärschlüssel hängt von einem Fremdschlüssel ab; 3NF ignoriert dies",
+        "b": "Alle Attribute sind unabhängig; 3NF fügt Abhängigkeiten hinzu",
+        "c": "Ein Nicht-Schlüssel-Attribut hängt von einem anderen Nicht-Schlüssel-Attribut ab; in 3NF durch Auslagern in separate Tabellen gelöst",
+        "correct": "c"
+    },
+    "Was versteht man unter referenzieller Integrität in einer Datenbank?": {
+        "a": "Primärschlüssel müssen NULL-Werte enthalten",
+        "b": "Fremdschlüssel müssen auf gültige Primärschlüssel verweisen, um konsistente Beziehungen zu gewährleisten",
+        "c": "Tabellen dürfen keine Spalten haben",
+        "correct": "b"
+    },
+    "Erkläre das ACID-Prinzip und wofür es in Datenbanksystemen wichtig ist": {
+        "a": "Ein Algorithmus zur Datensicherung auf Servern",
+        "b": "Ein Protokoll zur Verschlüsselung von Tabellen",
+        "c": "Beschreibt Eigenschaften von Transaktionen: Atomarität, Konsistenz, Isolation, Dauerhaftigkeit",
+        "correct": "c"
+    },
+    "Was ist eine View (Sicht) in einer Datenbank?": {
+        "a": "Eine neue physische Tabelle mit doppelten Daten",
+        "b": "Ein Backup einer Tabelle",
+        "c": "Eine gespeicherte SQL-Abfrage, die als virtuelle Tabelle verwendet wird",
+        "correct": "c"
+    },
+    "Warum wurde JavaScript standardisiert?": {
+        "a": "Um die Browserkriege zu beenden und Fragmentierung zu verhindern",
+        "b": "Um Java vollständig zu ersetzen",
+        "c": "Um JavaScript nur für Desktop-Apps nutzbar zu machen",
+        "correct": "a"
+    },
+    "Welcher Standard definiert JavaScript als herstellerneutrale Sprache?": {
+        "a": "HTML5",
+        "b": "ECMA-262",
+        "c": "ISO-9001",
+        "correct": "b"
+    },
+    "Welche Besonderheit hat var im Vergleich zu let und const?": {
+        "a": "Hoisting und Funktions-Scope",
+        "b": "Block-Scope",
+        "c": "Unveränderbarkeit",
+        "correct": "a"
+    },
+    "Wofür verwendet man const?": {
+        "a": "Für Variablen, die mehrfach überschrieben werden können",
+        "b": "Für Variablen mit Funktions-Scope",
+        "c": "Für eine Konstante, deren Wert nicht neu zugewiesen werden darf",
+        "correct": "c"
+    },
+    "Welches Vererbungsmodell liegt JavaScript zugrunde?": {
+        "a": "Prototypische Vererbung",
+        "b": "Klassische Vererbung wie in Java",
+        "c": "Mehrfachvererbung wie in C++",
+        "correct": "a"
+    },
+    "Welche Syntax erleichtert das Arbeiten mit Objekten, ändert aber den Mechanismus nicht?": {
+        "a": "extends",
+        "b": "class",
+        "c": "function",
+        "correct": "b"
+    },
+    "Welches Problem sollte mit Promises gelöst werden?": {
+        "a": "DOM schneller zu laden",
+        "b": "Schleifen in JavaScript zu vereinfachen",
+        "c": "Callback Hell zu vermeiden",
+        "correct": "c"
+    },
+    "Wie erleichtert async/await die Programmierung?": {
+        "a": "Durch vereinfachte Syntax, die wie synchroner Code aussieht",
+        "b": "Durch parallele Threads",
+        "c": "Durch automatisches Fehler-Logging",
+        "correct": "a"
+    },
+    "Wofür wird Node.js hauptsächlich verwendet?": {
+        "a": "Gestaltung von Webseiten",
+        "b": "Serverseitige Entwicklung",
+        "c": "Datenbankmodellierung",
+        "correct": "b"
+    },
+    "Welches Framework erlaubt die Entwicklung mobiler Apps mit JavaScript?": {
+        "a": "Bootstrap",
+        "b": "Vue Router",
+        "c": "React Native",
+        "correct": "c"
+    },
+    "Was ist ein Event-Listener?": {
+        "a": "Ein CSS-Befehl für Hover-Effekte",
+        "b": "Ein Code-Snippet, das HTML-Struktur lädt",
+        "c": "Eine Funktion, die auf ein Ereignis wartet und darauf reagiert",
+        "correct": "c"
+    },
+    "Welcher Vorteil hat addEventListener gegenüber älteren Methoden?": {
+        "a": "Es erlaubt mehrere Listener pro Ereignis",
+        "b": "Es ist kürzer zu schreiben",
+        "c": "Es ersetzt automatisch removeEventListener",
+        "correct": "a"
+    },
+    "Was nutzt Event Delegation technisch aus?": {
+        "a": "CSS-Kaskadierung",
+        "b": "Event Bubbling",
+        "c": "Promises",
+        "correct": "b"
+    },
+    "Warum ist Event Delegation oft performanter?": {
+        "a": "Weil HTML kompakter wird",
+        "b": "Weil CSS-Selektoren schneller arbeiten",
+        "c": "Weil weniger einzelne Listener im Speicher sind",
+        "correct": "c"
+    },
+    "Wann wird DOMContentLoaded ausgelöst?": {
+        "a": "Wenn das HTML-Dokument geladen und der DOM-Baum erstellt ist",
+        "b": "Erst wenn alle Bilder und Stylesheets geladen sind",
+        "c": "Sobald der erste <script>-Block gelesen ist",
+        "correct": "a"
+    },
+    "Wofür verwendet man window.onload?": {
+        "a": "Für Inline-Skripte in HTML",
+        "b": "Für Aktionen, die warten müssen, bis alle Ressourcen geladen sind",
+        "c": "Für DOM-Manipulation sofort nach Parsen",
+        "correct": "b"
+    },
+    "Was ist die Aufgabe einer JavaScript-Engine wie V8?": {
+        "a": "Sie rendert CSS",
+        "b": "Sie baut den DOM-Baum auf",
+        "c": "Sie führt JavaScript-Code aus",
+        "correct": "c"
+    },
+    "Was ist die Rolle einer Host-Umgebung wie Node.js oder Browser?": {
+        "a": "Sie stellt APIs für Interaktion mit der Außenwelt bereit",
+        "b": "Sie validiert HTML-Dokumente",
+        "c": "Sie optimiert die Laufzeitgeschwindigkeit von CSS",
+        "correct": "a"
+    },
+    "Welche drei Kerntechnologien bilden die Basis des Webs?": {
+        "a": "SQL, XML und PHP",
+        "b": "Java, Flash und CSS",
+        "c": "HTML, CSS und JavaScript",
+        "correct": "c"
+    },
+    "Wie wird in der Universitätsdatenbank die 1:1-Beziehung zwischen Professor und Forschungsbereich sichergestellt?": {
+        "a": "Durch einen UNIQUE-Constraint auf die Fremdschlüsselspalte",
+        "b": "Durch einen LEFT JOIN zwischen Professoren und Forschungsbereichen",
+        "c": "Durch eine zusätzliche Zwischentabelle",
+        "correct": "a"
+    },
+    "Warum handelt es sich bei der Beziehung Professor - Kurse um eine 1:n-Beziehung?": {
+        "a": "Weil jeder Kurs von mehreren Professoren gehalten wird",
+        "b": "Weil ein Professor mehrere Kurse halten kann, aber jeder Kurs nur genau einen Professor hat",
+        "c": "Weil ein Kurs keinem Professor zugeordnet ist",
+        "correct": "b"
+    },
+    "Warum wird bei Studenten und Kursen eine Zwischentabelle benötigt?": {
+        "a": "Weil ein Student viele Kurse belegen und ein Kurs von vielen Studenten besucht werden kann",
+        "b": "Um Primärschlüssel und Fremdschlüssel zusammenzuführen",
+        "c": "Damit Kurse nur einmal pro Semester existieren",
+        "correct": "a"
+    },
+    "Welche Aufgabe hat ein Fremdschlüssel in einer Tabelle?": {
+        "a": "Er identifiziert jede Zeile eindeutig",
+        "b": "Er verweist auf den Primärschlüssel einer anderen Tabelle und stellt die Beziehung her",
+        "c": "Er erzwingt immer eine n:m-Beziehung",
+        "correct": "b"
+    },
+    "Warum wird in der Tabelle Belegung ein kombinierter Primärschlüssel aus StudentID und KursID verwendet?": {
+        "a": "Damit ein Student denselben Kurs nicht doppelt belegen kann",
+        "b": "Um alle Professoren mit allen Kursen zu verbinden",
+        "c": "Damit die Tabelle nur aus Fremdschlüsseln besteht",
+        "correct": "a"
+    },
+    "Welchen DDL-Befehl nutzt man, um einer Tabelle eine neue Spalte hinzuzufügen?": {
+        "a": "INSERT INTO",
+        "b": "ALTER TABLE ... ADD COLUMN",
+        "c": "CREATE VIEW",
+        "correct": "b"
+    },
+    "Mit welchem SQL-Befehl fragt man Daten ab und filtert sie optional?": {
+        "a": "SELECT ... WHERE",
+        "b": "UPDATE ... SET",
+        "c": "JOIN ... ON",
+        "correct": "a"
+    },
+    "Wie verknüpft man Professoren mit Kursen, um Namen und Kurstitel zu erhalten?": {
+        "a": "Mit einem LEFT JOIN auf die Tabellen Professoren und Kurse",
+        "b": "Mit einem CROSS JOIN",
+        "c": "Mit einem INNER JOIN über die ProfID",
+        "correct": "c"
+    },
+    "Wann verwendet man einen LEFT JOIN statt eines INNER JOIN?": {
+        "a": "Wenn man auch Datensätze der linken Tabelle sehen möchte, die keine Übereinstimmung in der rechten Tabelle haben",
+        "b": "Nur wenn die Fremdschlüssel als UNIQUE definiert sind",
+        "c": "Wenn man Datensätze beider Tabellen ohne Bedingung kombinieren möchte",
+        "correct": "a"
+    },
+    "Mit welcher Aggregatsfunktion zählt man alle Studenten in einer Tabelle?": {
+        "a": "SUM(StudentID)",
+        "b": "AVG(*)",
+        "c": "COUNT(*)",
+        "correct": "c"
+    },
+    "Wie zählt man die Kurse pro Professor und filtert nur Professoren mit mehr als einem Kurs?": {
+        "a": "Mit GROUP BY ProfID und HAVING COUNT(KursID) > 1",
+        "b": "Mit SELECT DISTINCT ProfID",
+        "c": "Mit WHERE COUNT(KursID) > 1",
+        "correct": "a"
+    },
+    "Was ist eine VIEW in einer relationalen Datenbank?": {
+        "a": "Eine gespeicherte SQL-Abfrage, die wie eine virtuelle Tabelle funktioniert",
+        "b": "Eine Kopie aller Tabelleninhalte",
+        "c": "Eine Datei auf dem Server",
+        "correct": "a"
+    },
+    "Was bedeutet Referentielle Integrität in einer Datenbank?": {
+        "a": "Ein Fremdschlüssel muss auf einen existierenden Primärschlüssel verweisen",
+        "b": "Alle Tabellen müssen den gleichen Primärschlüssel haben",
+        "c": "Alle Attribute dürfen keine NULL-Werte enthalten",
+        "correct": "a"
+    },
+    "Wie löscht man alle Belegungen zu einem Kurs über eine Subquery?": {
+        "a": "DELETE FROM Belegung WHERE KursID = (SELECT KursID FROM Kurse WHERE Titel = 'Datenbanken I')",
+        "b": "DROP TABLE Belegung",
+        "c": "DELETE * FROM Belegung WHERE Titel = 'Datenbanken I'",
+        "correct": "a"
+    }
+}
+
+
+
