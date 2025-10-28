@@ -40,30 +40,13 @@ Mehrspieler Quiz ist ein unterhaltsames und interaktives Quiz-Spiel, das es Spie
 2. **Abhängigkeiten installieren**:
    Es gibt keine zusätzlichen Abhängigkeiten außer `tkinter`, das normalerweise mit Python vorinstalliert ist.
 
-3. **Fragensätze vorbereiten**:
-   Erstelle eine Datei `questions.py` und definiere deine Fragendatensätze dort. Zum Beispiel:
-
-   ```python
-   questions2ADAC_DTSM = {
-       "Was ist die Hauptstadt von Deutschland?": {"a": "Berlin", "b": "München", "c": "Hamburg", "correct": "a"},
-       "Welches Jahr war der Beginn des Zweiten Weltkriegs?": {"a": "1939", "b": "1945", "c": "1914", "correct": "a"},
-       # Weitere Fragen...
-   }
-
-   questions2ADAC_INF = {
-       "Was bedeutet HTML?": {"a": "HyperText Markup Language", "b": "HyperText Makeup Language", "c": "Hyperlink and Text Markup Language", "correct": "a"},
-       "Wer hat das World Wide Web erfunden?": {"a": "Bill Gates", "b": "Tim Berners-Lee", "c": "Steve Jobs", "correct": "b"},
-       # Weitere Fragen...
-   }
-   ```
 
 ## Verwendung
 
 1. **Quiz starten**:
    ```bash
-   python multiplayerquizapp.py
+   python -m ui.console_game
    ```
-2. Wähle "Spiel erstellen" oder "Spiel beitreten", um das Quiz zu starten.
 
 ## Projektstruktur
 
@@ -74,11 +57,4 @@ mehrspieler-quiz/
 ├── README.md
 ```
 
-## Fragensätze
-
-Die Fragensätze sind in der Datei `questions.py` definiert und können leicht angepasst oder erweitert werden.
-
-## Autoren
-
-- [pobe22](https://github.com/pobe22)
 
