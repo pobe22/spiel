@@ -1023,6 +1023,382 @@ questions4ADAC_INF = {
         "correct": "a"
     }
 }
+questions4ADAC_INF_2 = {
+    #Stored Procedures
+    "Was sind Stored Procedures?": {
+        "a": "Auf dem Server gespeicherte Prozeduren mit SQL-Anweisungen und zusätzlichen Befehlen zur Ablaufsteuerung",
+        "b": "Temporäre Abfragen, die nur während einer Sitzung existieren",
+        "c": "Clientseitige Skripte zur Datenverarbeitung",
+        "correct": "a"
+    },
+    "Für welches Einsatzgebiet eignen sich Stored Procedures besonders?": {
+        "a": "Für einmalige, einfache SELECT-Abfragen",
+        "b": "Zur Auslagerung wiederkehrender SQL-Operationen mit abhängigen Inserts in verschiedene Tabellen",
+        "c": "Ausschließlich für Backup-Operationen",
+        "correct": "b"
+    },
+    "Welcher Sicherheitsvorteil ergibt sich durch den Einsatz von Stored Procedures?": {
+        "a": "Anwender können direkt auf alle Systemtabellen zugreifen",
+        "b": "Passwörter werden automatisch verschlüsselt",
+        "c": "Anwender können von systemrelevanten Daten abgeschirmt werden, was besseren Datenschutz bietet",
+        "correct": "c"
+    },
+    "Was charakterisiert Select Procedures?": {
+        "a": "Sie liefern eine Ergebnismenge und können in SELECT-Abfragen wie eine Tabelle verwendet werden",
+        "b": "Sie ändern ausschließlich Datenbestände",
+        "c": "Sie geben nur einen Statuscode zurück",
+        "correct": "a"
+    },
+    "Wozu werden Call Procedures verwendet?": {
+        "a": "Um Ergebnismengen als Tabelle zurückzugeben",
+        "b": "Um Änderungen an Datenbeständen vorzunehmen, wobei normalerweise ein Statuscode über Erfolg oder Misserfolg zurückgegeben wird",
+        "c": "Ausschließlich zum Lesen von Daten ohne Veränderungen",
+        "correct": "b"
+    },
+    "Welche zusätzlichen Befehle stehen in Stored Procedures neben SQL-Anweisungen zur Verfügung?": {
+        "a": "Nur SELECT und INSERT",
+        "b": "Befehle zur Ablaufsteuerung und Auswertung von Bedingungen",
+        "c": "Ausschließlich Backup-Befehle",
+        "correct": "b"
+    },
+    "Was ist ein typisches Beispiel für den Einsatz von Stored Procedures?": {
+        "a": "Eine einfache SELECT-Abfrage auf eine Tabelle",
+        "b": "Ein Prozess mit einer Kette von abhängigen Inserts in unterschiedliche Tabellen",
+        "c": "Das Erstellen von Datenbank-Backups",
+        "correct": "b"
+    },
+    "Wo werden Stored Procedures gespeichert?": {
+        "a": "Im Browser-Cache des Clients",
+        "b": "Auf dem Datenbankserver",
+        "c": "In einer externen Konfigurationsdatei",
+        "correct": "b"
+    },
+    # Trigger
+    "Was ist ein Trigger?": {
+        "a": "Eine vom Anwender manuell gestartete Stored Procedure",
+        "b": "Eine besondere Form der Stored Procedures, die durch das Datenbanksystem selbst bei definierten Ereignissen gestartet wird",
+        "c": "Ein Backup-Mechanismus für Datenbanken",
+        "correct": "b"
+    },
+    "Auf welche Ereignisse kann ein Trigger innerhalb einer Tabelle reagieren?": {
+        "a": "Nur auf INSERT",
+        "b": "Nur auf DELETE",
+        "c": "Auf INSERT, UPDATE und DELETE",
+        "correct": "c"
+    },
+    "Welche Bestandteile gehören zu einem Trigger?": {
+        "a": "Name, Bedingung für Aktivierung und Ausführungsteil",
+        "b": "Nur der Name und die Bedingung",
+        "c": "Nur der Ausführungsteil",
+        "correct": "a"
+    },
+    "Kann ein Trigger mehrere Tabellen gleichzeitig überwachen?": {
+        "a": "Ja, ein Trigger kann beliebig viele Tabellen überwachen",
+        "b": "Nein, ein Trigger bezieht sich stets auf eine bestimmte Tabelle oder Sicht",
+        "c": "Ja, aber nur maximal zwei Tabellen",
+        "correct": "b"
+    },
+    "Was ermöglichen die Transitionsvariablen NEW und OLD?": {
+        "a": "Den Zugriff auf Werte einer Variable vor bzw. nach der definierten Aktion",
+        "b": "Das Löschen alter Datensätze",
+        "c": "Das Erstellen neuer Tabellen",
+        "correct": "a"
+    },
+    "Was bewirkt die Angabe von FOR EACH ROW bei einem Trigger?": {
+        "a": "Der Trigger wird nur einmal auf die gesamte Tabelle angewendet",
+        "b": "Der Trigger wird für jeden einzelnen Datensatz ausgeführt, der von der Anweisung betroffen ist",
+        "c": "Der Trigger wird nur auf die erste Zeile angewendet",
+        "correct": "b"
+    },
+    "Wie wird ein Trigger gestartet?": {
+        "a": "Manuell durch den Datenbankadministrator",
+        "b": "Automatisch durch das Datenbanksystem bei definierten Ereignissen",
+        "c": "Durch eine separate Anwendung außerhalb der Datenbank",
+        "correct": "b"
+    },
+    "Worauf bezieht sich ein Trigger immer?": {
+        "a": "Auf mehrere verschiedene Tabellen gleichzeitig",
+        "b": "Auf die gesamte Datenbank",
+        "c": "Auf eine bestimmte Tabelle oder eine bestimmte Sicht",
+        "correct": "c"
+    },
+    "Was ist ein typischer Anwendungsfall für Transitionsvariablen wie NEW.id?": {
+        "a": "Zugriff auf den Wert des Feldes 'id' nach der Aktion",
+        "b": "Löschen der Spalte 'id'",
+        "c": "Erstellen einer neuen Tabelle namens 'id'",
+        "correct": "a"
+    },
+    # Caching
+    "Was ist Caching?": {
+        "a": "Eine Technik zum dauerhaften Speichern von Daten auf der Festplatte",
+        "b": "Eine Technik, bei der Kopien häufig abgerufener Daten an einem schnellen Speicherort abgelegt werden",
+        "c": "Ein Verfahren zum Verschlüsseln von Datenbankinhalten",
+        "correct": "b"
+    },
+    "Welche drei Hauptvorteile bietet Caching?": {
+        "a": "Geschwindigkeit, Effizienz und Verfügbarkeit",
+        "b": "Sicherheit, Verschlüsselung und Komprimierung",
+        "c": "Backup, Recovery und Archivierung",
+        "correct": "a"
+    },
+    "Wie funktioniert ein Browser-Cache?": {
+        "a": "Er lädt alle Daten bei jedem Besuch neu aus dem Internet",
+        "b": "Er speichert bestimmte Teile einer Webseite auf der Festplatte des Nutzers, sodass sie beim erneuten Besuch nicht neu geladen werden müssen",
+        "c": "Er komprimiert Webseiten automatisch",
+        "correct": "b"
+    },
+    "Was ist ein Content Delivery Network (CDN)?": {
+        "a": "Ein zentraler Server, der alle Webinhalte speichert",
+        "b": "Ein weltweit verteiltes Netzwerk von Servern, das statische Inhalte von geografisch nahen Standorten liefert",
+        "c": "Eine Datenbank für dynamische Inhalte",
+        "correct": "b"
+    },
+    "Was versteht man unter einem In-Memory-Cache?": {
+        "a": "Daten werden auf der Festplatte gespeichert",
+        "b": "Daten werden direkt im Arbeitsspeicher (RAM) gehalten, z.B. mit Redis oder Memcached",
+        "c": "Daten werden in der Cloud gespeichert",
+        "correct": "b"
+    },
+    "Was ist die größte Herausforderung beim Caching?": {
+        "a": "Die Geschwindigkeit des Caches",
+        "b": "Die Cache-Invalidierung, also zu wissen, wann zwischengespeicherte Daten veraltet sind",
+        "c": "Die Größe des Caches",
+        "correct": "b"
+    },
+    "Was ist eine Time-To-Live (TTL) Strategie?": {
+        "a": "Eine Strategie, bei der festgelegt wird, wie lange Daten im Cache gültig sind, bevor sie automatisch entfernt werden",
+        "b": "Eine Methode zum dauerhaften Speichern von Daten",
+        "c": "Ein Verfahren zur Datenkomprimierung",
+        "correct": "a"
+    },
+    "Was ist ein Cache Hit?": {
+        "a": "Die angefragte Information ist nicht im Cache vorhanden",
+        "b": "Die angefragte Information wird im Cache gefunden und schnell geliefert",
+        "c": "Der Cache ist voll und muss geleert werden",
+        "correct": "b"
+    },
+    "Was ist ein Cache Miss?": {
+        "a": "Die Daten werden erfolgreich aus dem Cache geladen",
+        "b": "Die Daten sind nicht im Cache und müssen vom langsameren Ursprungsort geholt werden",
+        "c": "Der Cache funktioniert nicht mehr",
+        "correct": "b"
+    },
+    "Welche Arten von Inhalten werden typischerweise in einem CDN gespeichert?": {
+        "a": "Nur Textdateien",
+        "b": "Statische Inhalte wie Bilder, Videos, CSS-Dateien und JavaScript",
+        "c": "Ausschließlich Datenbankinhalte",
+        "correct": "b"
+    },
+    "Was speichert ein Datenbank-Cache?": {
+        "a": "Alle Tabellen der Datenbank dauerhaft",
+        "b": "Die Ergebnisse von häufig ausgeführten Datenbankabfragen",
+        "c": "Nur Passwörter und Zugangsdaten",
+        "correct": "b"
+    },
+    "Was charakterisiert einen Objekt-Cache?": {
+        "a": "Er speichert nur primitive Datentypen",
+        "b": "Er speichert ganze Objekte oder aufwendig berechnete Datenstrukturen",
+        "c": "Er funktioniert nur mit JSON-Daten",
+        "correct": "b"
+    },
+    "Warum verbessert Caching die Effizienz?": {
+        "a": "Es erhöht die Datenbankgröße",
+        "b": "Es reduziert die Last auf ursprünglichen Datenspeichern und spart Rechenleistung und Kosten",
+        "c": "Es erstellt automatisch Backups",
+        "correct": "b"
+    },
+    "Wie trägt Caching zur Verfügbarkeit bei?": {
+        "a": "Es verhindert alle Systemausfälle vollständig",
+        "b": "Wenn das Ursprungssystem ausfällt, kann der Cache manchmal weiterhin Daten liefern",
+        "c": "Es erstellt automatisch redundante Server",
+        "correct": "b"
+    },
+    # Sessions
+    "Warum sind Sessions in der Webentwicklung notwendig?": {
+        "a": "Weil HTTP ein zustandsloses Protokoll ist und Sessions ermöglichen, Benutzer über mehrere Seitenaufrufe zu identifizieren",
+        "b": "Um die Internetgeschwindigkeit zu erhöhen",
+        "c": "Um die Datenbank zu entlasten",
+        "correct": "a"
+    },
+    "Wie identifiziert ein Server eine bestimmte Benutzersitzung?": {
+        "a": "Durch die IP-Adresse des Benutzers",
+        "b": "Durch eine zufällige, eindeutige 32-stellige Session-ID, die bei jedem Seitenaufruf gesendet wird",
+        "c": "Durch den Browser-Namen",
+        "correct": "b"
+    },
+    "Wo muss die Funktion session_start() platziert werden?": {
+        "a": "Am Ende der PHP-Datei",
+        "b": "Ganz am Anfang einer PHP-Datei, noch bevor irgendeine Ausgabe an den Browser gesendet wird",
+        "c": "Irgendwo in der Mitte der Datei",
+        "correct": "b"
+    },
+    "Wie werden Daten in einer Session gespeichert?": {
+        "a": "Über die Variable $_POST",
+        "b": "Über die superglobale Array-Variable $_SESSION",
+        "c": "Über normale lokale Variablen",
+        "correct": "b"
+    },
+    "Wo werden Session-Daten physisch gespeichert?": {
+        "a": "Im Browser des Benutzers",
+        "b": "In einer Textdatei auf dem Webserver, typischerweise im Ordner für temporäre Dateien",
+        "c": "In der Datenbank",
+        "correct": "b"
+    },
+    "Was ist die Standarddauer einer Session bei Inaktivität?": {
+        "a": "60 Sekunden",
+        "b": "1440 Sekunden (24 Minuten)",
+        "c": "Eine Stunde",
+        "correct": "b"
+    },
+    "Wie löscht man eine einzelne Variable aus einer Session?": {
+        "a": "Mit der Funktion unset(), z.B. unset($_SESSION['vorname'])",
+        "b": "Mit der Funktion delete()",
+        "c": "Mit session_destroy()",
+        "correct": "a"
+    },
+    "Was ist der Unterschied zwischen $_SESSION = array(); und session_destroy()?": {
+        "a": "Es gibt keinen Unterschied",
+        "b": "$_SESSION = array(); leert alle Session-Variablen, aber die Session läuft weiter; session_destroy() beendet die komplette Session",
+        "c": "Beide Befehle machen genau das Gleiche",
+        "correct": "b"
+    },
+    "Was passiert, wenn ein Benutzer Cookies im Browser deaktiviert hat?": {
+        "a": "Sessions funktionieren normal weiter",
+        "b": "Sessions funktionieren nicht korrekt, da die Session-ID nicht gespeichert werden kann",
+        "c": "Die Webseite lädt schneller",
+        "correct": "b"
+    },
+    "Wann endet eine Session?": {
+        "a": "Nur wenn der Computer ausgeschaltet wird",
+        "b": "Wenn der Benutzer den Browser schließt, session_destroy() aufgerufen wird oder ein Timeout verstreicht",
+        "c": "Sessions enden nie automatisch",
+        "correct": "b"
+    },
+    "Welche PHP-Funktion beendet eine komplette Session?": {
+        "a": "unset($_SESSION)",
+        "b": "session_end()",
+        "c": "session_destroy()",
+        "correct": "c"
+    },
+    "Was wird in einem Cookie gespeichert, um Sessions zu ermöglichen?": {
+        "a": "Alle Session-Daten des Benutzers",
+        "b": "Die Session-ID",
+        "c": "Das Passwort des Benutzers",
+        "correct": "b"
+    },
+    "Was passiert mit dem Timeout bei jedem neuen Seitenaufruf während einer Session?": {
+        "a": "Der Timeout wird kürzer",
+        "b": "Die Zeitspanne wird zurückgesetzt",
+        "c": "Der Timeout bleibt unverändert",
+        "correct": "b"
+    },
+    "Wie lang ist eine typische Session-ID?": {
+        "a": "8 Zeichen",
+        "b": "16 Zeichen",
+        "c": "32 Zeichen",
+        "correct": "c"
+    },
+    "Was würde $_SESSION['benutzer'] = 'Maxi'; bewirken?": {
+        "a": "Es löscht den Benutzer 'Maxi'",
+        "b": "Es speichert den Wert 'Maxi' unter dem Schlüssel 'benutzer' in der Session",
+        "c": "Es beendet die Session",
+        "correct": "b"
+    },
+    # AJAX
+    "Was bedeutet AJAX und wofür steht die Abkürzung?": {
+        "a": "Advanced Java And XML",
+        "b": "Asynchronous JavaScript and XML - eine Technik zum Datenaustausch ohne Neuladen der Seite",
+        "c": "Automated JavaScript Ajax eXecution",
+        "correct": "b"
+    },
+    "Was ist das XMLHttpRequest-Objekt und wofür wird es verwendet?": {
+        "a": "Ein Tool zum Erstellen von XML-Dokumenten",
+        "b": "Eine Datenbank für Browser-Daten",
+        "c": "Das Herzstück von AJAX, um HTTP-Anfragen zu senden und Antworten zu empfangen ohne Seitenneuladung",
+        "correct": "c"
+    },
+    "Wie wird eine HTTP-Anfrage mit dem XMLHttpRequest-Objekt initialisiert?": {
+        "a": "Mit der Methode send()",
+        "b": "Mit der Methode start()",
+        "c": "Mit der Methode open(), wobei HTTP-Methode, URL und Asynchronität übergeben werden",
+        "correct": "c"
+    },
+    "Was ist der Unterschied zwischen GET und POST im Kontext von AJAX?": {
+        "a": "GET ist schneller, POST ist langsamer",
+        "b": "GET funktioniert nur mit XML, POST nur mit JSON",
+        "c": "GET hängt Parameter an die URL an (kleinere Daten), POST überträgt Daten im Nachrichtenrumpf (größere/sensible Daten)",
+        "correct": "c"
+    },
+    "Was ist die Same-Origin-Policy?": {
+        "a": "Eine Regel, die vorschreibt, dass alle Daten verschlüsselt werden müssen",
+        "b": "Eine Richtlinie zum Komprimieren von Daten",
+        "c": "Eine Sicherheitsrichtlinie, die verhindert, dass AJAX-Anfragen an andere Domains gesendet werden, um XSS zu vermeiden",
+        "correct": "c"
+    },
+    "Welche Funktion hat der Eventhandler onreadystatechange?": {
+        "a": "Er initialisiert die AJAX-Anfrage",
+        "b": "Er beendet die Verbindung zum Server",
+        "c": "Er wird bei jeder Zustandsänderung der AJAX-Anfrage aufgerufen, hauptsächlich um den Abschluss zu prüfen",
+        "correct": "c"
+    },
+    "Was bedeutet readyState = 4?": {
+        "a": "Verbindung wird aufgebaut",
+        "b": "Antwort wird empfangen",
+        "c": "Anfrage abgeschlossen und Antwort bereit",
+        "correct": "c"
+    },
+    "Was bedeutet readyState = 0?": {
+        "a": "Anfrage nicht initialisiert",
+        "b": "Verbindung aufgebaut",
+        "c": "Anfrage gesendet",
+        "correct": "a"
+    },
+    "Was ist der Unterschied zwischen responseText und responseXML?": {
+        "a": "responseText ist schneller als responseXML",
+        "b": "Es gibt keinen Unterschied",
+        "c": "responseText liefert die Antwort als Zeichenkette, responseXML als XML-Dokument/DOM-Struktur",
+        "correct": "c"
+    },
+    "Welche Vorteile bietet JSON im Vergleich zu XML in AJAX?": {
+        "a": "JSON ist komplexer und ausdrucksstärker",
+        "b": "JSON funktioniert nur mit POST-Anfragen",
+        "c": "JSON ist schlanker, einfacher zu verarbeiten, nativ in JavaScript unterstützt und benötigt weniger Speicher",
+        "correct": "c"
+    },
+    "Wie werden Daten per AJAX über POST an den Server gesendet?": {
+        "a": "Mit der Methode open() und automatischer Übertragung",
+        "b": "Nur durch Anhängen an die URL",
+        "c": "Mit der Methode send() und setRequestHeader() zum Setzen des Content-Types wie 'application/x-www-form-urlencoded'",
+        "correct": "c"
+    },
+    "Was bedeutet readyState = 2?": {
+        "a": "Verbindung aufgebaut",
+        "b": "Anfrage gesendet",
+        "c": "Antwort wird empfangen",
+        "correct": "b"
+    },
+    "Warum ist AJAX wichtig für moderne Webanwendungen?": {
+        "a": "Es macht Webseiten bunter",
+        "b": "Es erhöht die Serverlast",
+        "c": "Es ermöglicht Datenaustausch ohne Neuladen der Seite, was die Benutzererfahrung verbessert",
+        "correct": "c"
+    },
+    "Was muss bei POST-Anfragen mit setRequestHeader() gesetzt werden?": {
+        "a": "Die Dateigröße",
+        "b": "Die Serveradresse",
+        "c": "Der Content-Type, z.B. 'application/x-www-form-urlencoded'",
+        "correct": "c"
+    },
+    "Was bedeutet readyState = 3?": {
+        "a": "Anfrage nicht initialisiert",
+        "b": "Anfrage gesendet",
+        "c": "Antwort wird empfangen",
+        "correct": "c"
+    }
+}
+
+
+
 
 
 
