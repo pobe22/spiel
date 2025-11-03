@@ -1220,12 +1220,6 @@ questions4ADAC_INF_2 = {
         "c": "Um die Datenbank zu entlasten",
         "correct": "a"
     },
-    "Wie identifiziert ein Server eine bestimmte Benutzersitzung?": {
-        "a": "Durch die IP-Adresse des Benutzers",
-        "b": "Durch eine zufällige, eindeutige 32-stellige Session-ID, die bei jedem Seitenaufruf gesendet wird",
-        "c": "Durch den Browser-Namen",
-        "correct": "b"
-    },
     "Wo muss die Funktion session_start() platziert werden?": {
         "a": "Am Ende der PHP-Datei",
         "b": "Ganz am Anfang einer PHP-Datei, noch bevor irgendeine Ausgabe an den Browser gesendet wird",
@@ -1320,7 +1314,7 @@ questions4ADAC_INF_2 = {
     "Wie wird eine HTTP-Anfrage mit dem XMLHttpRequest-Objekt initialisiert?": {
         "a": "Mit der Methode send()",
         "b": "Mit der Methode start()",
-        "c": "Mit der Methode open(), wobei HTTP-Methode, URL und Asynchronität übergeben werden",
+        "c": "Mit der Methode open()",
         "correct": "c"
     },
     "Was ist der Unterschied zwischen GET und POST im Kontext von AJAX?": {
